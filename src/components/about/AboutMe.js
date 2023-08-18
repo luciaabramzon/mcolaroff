@@ -5,6 +5,7 @@ import '../../styles/about.css'
 import NavExpertise from "../expertise/NavExpertise";
 import Cards from "./cards";
 import Passions from "./passions";
+import Footer from '../Footer'
 
 
 const AboutMe=()=>{
@@ -47,6 +48,7 @@ return(
                 </div>
                 </div>
                 <Passions/>
+                <Footer/>
             </div>
             </>
         )

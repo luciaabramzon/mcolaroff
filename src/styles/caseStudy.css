@@ -13,6 +13,7 @@
     flex-direction: column;
     margin-top: 5%;
     text-align: initial;
+    width: 40%;
 }
 .caseStudyP{
     color: #000;
@@ -53,13 +54,43 @@
 }
 .imagesStudy{
     margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 494px;
 }
-.arrows{
-    margin-top: 20%;
+.imagesGif{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.image1{
+    width: 50%;
+ 
+}
+.imageStudy1{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.image2{
+    height: 58%;
+    width: 96%;
+}
+.mgrGif{
+    width: 97%;
+    height: 40%;
+    border-radius: 25px;
 }
 @media (max-width:768px){
-    .item1{
+    .itemWeb{
         display: none;
+    }
+    .item1{
+        width: 100%;
+        justify-content: center;
     }
     .itemMobile{
         display: flex;
@@ -67,6 +98,9 @@
         width: 85%;
         margin:0 auto;
         margin-top: 10%;
+    }
+    .caseStudy{
+        width: 100%;
     }
     .caseStudyP{
         font-size:12px
@@ -76,9 +110,12 @@
     }
     .imagesStudy{
         width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 40vh;
     }
     .imgMobile{
-        width: 100%;
+        width: 90%;
     }
     .caseStudyTitle{
         width: 100%;
@@ -91,9 +128,31 @@
     }
     .arrows{
         text-align: initial;
+        text-align: center;
         margin-bottom: 8%;
     }
     .arrows img{
         width: 10%;
     }
+    .image1{
+        width: 130%;
+        margin-bottom: 5%;
+        height: 100%;
+    }
+    .imagesGif{
+        width: 100%;
+    }
+    .image2{
+        width: 90%;
+        height: 60%;
+        margin-bottom: 5%;
+    }
+    .mgrGif{
+        width: 90%;
+        border-radius: 10px;
+    }
+    .itemWeb{
+        width: 100%;
+    }
+    
 }

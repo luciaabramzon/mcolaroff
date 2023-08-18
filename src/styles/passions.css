@@ -5,13 +5,13 @@ font-family: 'Be Vietnam Pro',sans-serif;
 font-size: 36px;
 font-style: normal;
 font-weight: 700;
-line-height: 69.6px; /* 193.333% */
+line-height: 400%;
 text-align: initial;
 margin-left: 8%;
-margin-top: 5% !important;
 }
 .myPassions{
     background: #EBEBEB;
+    margin-top: 10%;
 }
 .passionPhotos{
     width: 80%;
@@ -19,10 +19,38 @@ margin-top: 5% !important;
     flex-direction: column;
     margin:0 auto;
 }
-.passions{
+.passions, .passionsLast{
     display: flex;
     width: 100%;
+    gap: 1%;
+    margin-top: 1%;
 }
-.passions img{
+.passionsImg{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s; 
+    cursor: pointer; 
+}
+.passionsImg:hover{
+    transform: scale(1.1); 
     border-radius: 10px;
 }
+.passionsLast{
+    margin-bottom: 10%;
+}
+.passionsImgContainer { 
+    overflow: hidden; 
+    border-radius: 10px;
+}
+@media (max-width:768px){
+    .passions, .passionsLast{
+        flex-wrap: wrap;
+    }
+    .passionsImgContainer{
+        margin:0 auto;
+        width: 90%;
+        margin-bottom: 4%;
+    }
+}
+

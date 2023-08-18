@@ -26,6 +26,7 @@
 
 }
 .cardDown, .cardUp{
+    height: 90%;
     width: 100%;
     border-radius: 10px;
 background: #E3E3E3;
@@ -47,6 +48,7 @@ justify-content: space-evenly;
 }
 .cardParagraph{
     margin-top: 10%;
+    width: 90%;
 }
 .imageCardUp{
     margin-top: 10%;
@@ -78,4 +80,25 @@ justify-content: space-evenly;
   }
   .arrowsAbout{
     margin-top: 0%;
+  }
+  @media (max-width:768px){
+    .aboutTitle{
+        margin-top: 10% !important;
+    }
+    .aboutText{
+        width: 80%;
+    }
+    .aboutMeCards{
+        width: 100%;
+    }
+    .cardContainer{
+        width: 90%;
+    }
+    .cardDown,.cardUp{
+        height: 90%;
+    }
+    .cardUp{
+        margin-top: 0%;
+    }
+
   }

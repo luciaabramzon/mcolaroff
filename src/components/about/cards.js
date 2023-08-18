@@ -1,7 +1,7 @@
 import '../../styles/about.css'
 import CardDown from './cardDown'
 import CardUp from './cardUp'
-import cardD1 from '../../images/cardD1.svg'
+import cardD1 from '../../images/card1.webp'
 import cardU2 from '../../images/ivy.jpg'
 import card3 from '../../images/card3.svg'
 import card4 from '../../images/card4.svg'

@@ -1,46 +1,86 @@
-import imageCase from '../images/caseStudy.svg'
+import gif from '../images/mgr.gif'
+import mgr1 from '../images/mgr1.webp'
+import mgr2 from '../images/mgr2.webp'
 import arrow1 from '../images/arrow1.svg'
 import arrow2 from '../images/arrow2.svg'
-
+import gifDonapp from '../images/gifFinal.gif'
+import d1 from '../images/d1.webp'
+import d2 from '../images/d2.webp'
 import '../styles/caseStudy.css'
+import Cases from './cases'
+import CasesMobile from './casesMobile'
+import { useState } from 'react'
 
-const CaseStudy=()=>{
-    return(
-        <div>
-        <div className="item1">
-            <div className="caseStudy">
-                <p className='caseStudyP'>Case Study</p>
-                <p className='caseStudySub'>Industry of the work</p>
-                <p className='caseStudyTitle'>Brief overview of the job's focus </p>
-                <p className='caseStudyInfo'>The role entails developing a product that offers solutions to [specific problems or needs]. The resulting product provides streamlined solutions, enriching user experiences and boosting overall efficiency.</p>
-                <div className='arrows'>
-                <img src={arrow1}/>
-                <img src={arrow2}/>
-                </div>
+const CaseStudy = () => {
+    const [currentCase, setCurrentCase] = useState(0);
+
+    const handleArrowClick = (direction) => {
+        if (direction === 'prev') {
+            setCurrentCase(currentCase - 1);
+        } else if (direction === 'next') {
+            if (currentCase === cases.length - 1) {
+                setCurrentCase(0); 
+            } else {
+                setCurrentCase(currentCase + 1);
+            }
+        }
+    };
+
+
+    const cases = [
+        {
+            caseStudyP: 'mgr sport redesign',
+            caseStudySub: 'BRANDING',
+            caseStudyT: 'Re-Branding MGR SPORT, a local sports brand in Uruguay, to infuse it with heightened dynamism and a focus on movement. ',
+            caseStudyI: 'For this redesign, we concentrated on sports popular in Uruguay, as the brand was previously associated only with football. With this MGR rebranding, the goal is to expand across all sports, encouraging consumers to join a sports community that fosters feelings of security, reliability, and well-being.',
+            img1: mgr1,
+            img2: mgr2,
+            gif: gif
+        },
+        {
+            caseStudyP: 'dona',
+            caseStudySub: 'dona',
+            caseStudyT: 'Re-Branding MGR SPORT...',
+            caseStudyI: 'For this redesign...',
+            img1: gifDonapp,
+            img2: d1,
+            gif: d2   
+        }
+        // Add more cases as needed
+    ];
+
+    const currentCaseData = cases[currentCase];
+
+    return (
+        <>
+        <div className='itemWeb'>
+            <Cases
+                caseStudyP={currentCaseData.caseStudyP}
+                caseStudySub={currentCaseData.caseStudySub}
+                caseStudyT={currentCaseData.caseStudyT}
+                caseStudyI={currentCaseData.caseStudyI}
+                img1={currentCaseData.img1}
+                img2={currentCaseData.img2}
+                gif={currentCaseData.gif}
+            />
             </div>
-            <div className="imagesStudy">
-            <img src={imageCase}/>
+            <div className='itemMobile'>
+                <CasesMobile
+                 caseStudyP={currentCaseData.caseStudyP}
+                 caseStudySub={currentCaseData.caseStudySub}
+                 caseStudyT={currentCaseData.caseStudyT}
+                 caseStudyI={currentCaseData.caseStudyI}
+                 img1={currentCaseData.img1}
+                 img2={currentCaseData.img2}
+                 gif={currentCaseData.gif}
+                 />
             </div>
-        </div>
-        <div className="itemMobile">
-            <div className="caseStudy">
-                <p className='caseStudyP'>Case Study</p>
-                <p className='caseStudySub'>Industry of the work</p>
+            <div className='arrows'>
+                <img src={arrow1} onClick={() => handleArrowClick('prev')} />
+                <img src={arrow2} onClick={() => handleArrowClick('next')} />
             </div>
-            <div className="imagesStudy">
-            <img className='imgMobile' src={imageCase}/>
-            </div>
-            <div>
-                <p className='caseStudyTitle'>Brief overview of the job's focus </p>
-                <p className='caseStudyInfo'>The role entails developing a product that offers solutions to [specific problems or needs]. The resulting product provides streamlined solutions, enriching user experiences and boosting overall efficiency.</p>
-                <div className='arrows'>
-                <img src={arrow1}/>
-                <img src={arrow2}/>
-                </div>
-            </div>
-            
-        </div>
-        </div>
-    )
-}
-export default CaseStudy;
+        </>
+    );
+};
+
+export default CaseStudy
