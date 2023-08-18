@@ -1,0 +1,229 @@
+.firstUx{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.textUx{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.contactUx{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 10%;
+    justify-content: space-between;
+}
+.paragraphUx{
+    color: #000;
+font-family: Be Vietnam Pro;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 137.5%; /* 137.5% */
+text-align: initial;
+}
+.titleUx{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 5%;
+}
+.elipseUx{
+    margin-right: 10%;
+}
+.elipseUxUi{
+    display: flex;
+    justify-content: flex-start;
+}
+.contactMeUx{
+    background-color: #406EE4;
+    width: 80%;
+    padding: 10px;
+    color: #FFF;
+text-align: center;
+font-family: Be Vietnam Pro;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 111.111%; /* 111.111% */
+border-radius: 5px;
+border: none;
+}
+.contactMeUx:hover{
+    background-color: #6F80CC;
+}
+.projectR , .projectL{ 
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: 0 auto;
+}
+.projectL{
+    background-color: black;
+    border-radius: 10px;
+}
+.projectText{
+    display:flex;
+    flex-direction: column;
+    border-radius: 10px;
+background: #EFEFEF;
+width: 50%;
+}
+.projectLeftText{
+    display:flex;
+    flex-direction: column;
+    border-radius: 10px;
+background: black;
+width: 50%;
+}
+.projectImage{
+    width: 50%;
+}
+.projects{
+    margin-top: 5%;
+}
+.projectNumber{
+    color: #333;
+font-family: 'Be Vietnam Pro', sans-serif;
+font-size: 21px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 120% */
+}
+.projectLeftNumber{
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 120% */
+}
+.projectName{
+    color: #333;
+font-family: 'Ubuntu',sans-serif;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 110%; /* 110% */
+margin: 0;
+margin-bottom:8%
+}
+.projectLeftName{
+    color: white;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 110% */
+    margin: 0;
+    margin-bottom:8%
+}
+.projectText{
+    color: #000;
+font-family: Be Vietnam Pro;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 137.5%; /* 137.5% */
+justify-content: center;
+align-items: flex-start;
+text-align: initial;
+}
+.projectLeftText{
+    color: white;
+font-family: 'Be Vietnam Pro', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 137.5%; /* 137.5% */
+justify-content: center;
+align-items: flex-start;
+text-align: initial;
+
+}
+.buttonProject{
+    color: #FFF;
+text-align: center;
+font-family: 'Be Vietnam Pro',sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 125%; /* 125% */
+border-radius: 5px;
+background: #2946CF;
+padding: 10px;
+border: none;
+display: flex;
+margin-top: 8%;
+}
+.marginUx{
+    margin-left: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.buttonProject:hover{
+  background-color: #6F80CC ;
+}
+.footerUx{
+    margin-top: 3%;
+}
+@media (max-width:768px){
+    .contactUx{
+        display: none;
+    }
+    .textUx{
+        width: 90%;
+    }
+    .firstUx{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15%;
+    }
+    .titleUx{
+        display: flex;
+        flex-direction: column;
+    }
+    .elipseUx{
+        width: 25%;
+    }
+    .paragraphUx{
+        width: 100%;
+    }
+    .projectR{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .projectL{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+    .projectText, .projectLeftText{
+        width: 90%;
+    }
+    .imageProject{
+        width: 100%;
+    }
+    .projectImage{
+        width: 90%;
+        margin-top:5%
+    }
+    .marginUx{
+        width: 80%;
+        align-items: stretch;
+        margin-top: 8%;
+        margin-bottom: 12%;
+    }
+}

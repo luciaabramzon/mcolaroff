@@ -1,0 +1,99 @@
+.itemMobile{
+    display: none;
+}
+.item1{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+.caseStudy{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    text-align: initial;
+}
+.caseStudyP{
+    color: #000;
+    font-family: 'Be Vietnam Pro',sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15.698px; /* 112.132% */
+    text-transform: uppercase;
+    width: 60%;
+}
+.caseStudySub{
+    color: #000;
+    font-family: 'Be Vietnam Pro',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 98.115%; /* 98.115% */
+    width: 60%;
+}
+.caseStudyTitle{
+    color: #000;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 125% */
+    width: 60%;
+}
+.caseStudyInfo{
+    color: #000;
+    font-family: 'Be Vietnam Pro',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.5%; /* 137.5% */
+    width: 60%;
+}
+.imagesStudy{
+    margin-top: 5%;
+}
+.arrows{
+    margin-top: 20%;
+}
+@media (max-width:768px){
+    .item1{
+        display: none;
+    }
+    .itemMobile{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin:0 auto;
+        margin-top: 10%;
+    }
+    .caseStudyP{
+        font-size:12px
+    }
+    .caseStudySub{
+        font-size: 20px;
+    }
+    .imagesStudy{
+        width: 100%;
+    }
+    .imgMobile{
+        width: 100%;
+    }
+    .caseStudyTitle{
+        width: 100%;
+        margin-top: 10% !important;
+        text-align: initial;
+    }
+    .caseStudyInfo{
+        width: 100%;
+        text-align: initial;
+    }
+    .arrows{
+        text-align: initial;
+        margin-bottom: 8%;
+    }
+    .arrows img{
+        width: 10%;
+    }
+}

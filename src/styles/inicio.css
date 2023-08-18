@@ -1,0 +1,165 @@
+
+body{
+    margin:0;
+    padding:0;
+}
+.start{
+    background: radial-gradient(ellipse at 50% -30%, rgb(0 0 0 / 51%) 0%, rgb(0 0 0) 100%);
+    width: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo{
+    width: 70%;
+    text-align: initial;
+    margin-top: 8%;
+}
+.buttons{
+    display: flex;
+    width: 30%;
+    margin-top: 8%;
+    color: #FFF;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 219.375%; /* 219.375% */
+}
+.aboutMe{
+    width: 50%;
+}
+.contactMe{
+    width: 50%;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+}
+.name{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    margin-bottom: 2%;
+}
+.about{
+    color: #FFF;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 58px;
+    font-style: normal;
+    line-height: 69.6px;
+    width: 60%;
+}
+.about p{
+    margin: 0px !important;
+}
+.contactButton{
+    border-radius: 5px;
+    background: #2946CF;
+    padding: 10px;
+    border-color: transparent;
+    width: 120%;
+    color: white;
+    margin-top: 25%;
+}
+.contactButton:hover{
+    background: #6F80CC;
+    color: white;
+}
+.frame{
+    margin-top: 13%;
+    overflow: hidden;
+    width: 100%;
+}
+.startButtons {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px; 
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s ease-in-out; 
+  }
+  
+  .startButtons::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .startButtons::before {
+    content: url('../images/rectangleNav.svg'); 
+    display: block;
+    position: absolute;
+    bottom: -30px; 
+    left: 50%;
+    transform: translateX(-50%) scaleY(0); 
+    transition: transform 0.3s ease-in-out;
+    pointer-events: none; 
+  }
+  
+  .startButtons:hover {
+    color: white;
+  }
+  
+  .startButtons:hover::after {
+    transform: scaleX(1); 
+  }
+  
+  .startButtons:hover::before {
+    transform: translateX(-50%) scaleY(1); 
+  }
+  @media (max-width:768px){
+    .nav{
+        width: 90%;
+        justify-content: space-around;
+    }
+    .logo{
+        width: 50%;
+    }
+    .buttons{
+        width: 50%;
+        font-size: 14px;
+    }
+    .name{
+        font-size: 16px;
+        margin-bottom: 8%;
+    }
+    .about p{
+        font-size: 32px;
+    }
+    .about{
+        width: 90%;
+        margin-bottom: 10%;
+    }
+    .title{
+        margin-top: 10%;
+    }
+    .frame{
+        width: 300%;
+        margin-top: 15%;
+        margin-bottom: 7%;
+    }
+    .figures{
+        overflow: hidden;
+    }
+    
+  }

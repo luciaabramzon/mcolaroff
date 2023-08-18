@@ -1,0 +1,81 @@
+.aboutTitle{
+    color: #000;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 219.375%; /* 219.375% */
+    margin:0 auto;
+    margin-top: 8% !important;
+    width: 50%;
+}
+.aboutText{
+    color: #000;
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 141.667%; /* 141.667% */
+    margin:0 auto;
+    width: 50%;
+}
+.myStory{
+    display:flex;
+    flex-direction: column;
+
+}
+.cardDown, .cardUp{
+    width: 100%;
+    border-radius: 10px;
+background: #E3E3E3;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+.imageCard{
+    width: 90%;
+    margin-bottom: 10%;
+}
+.cardText{
+    margin-top: 10%;
+    text-align: initial;
+    margin-left: 7%;
+    margin-bottom: 20%;
+}
+.cardParagraph{
+    margin-top: 10%;
+}
+.imageCardUp{
+    margin-top: 10%;
+}
+.aboutMeCards{
+    display: flex;
+    flex-direction: row;
+  gap: 20px; /* Espacio entre las cards */
+  padding: 20px; /* Agrega espacio alrededor para evitar recorte */
+  margin-bottom: 20px;
+  scroll-snap-type: x mandatory;
+  max-width: calc(100% *8);
+}
+.cardContainer {
+    flex: 0 0 auto; 
+    width:20%;
+    scroll-snap-align: 0; 
+    margin-right: 3%;
+}
+  .aboutmeCardsContainer {
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    width: 90%;
+    margin: 0 auto;
+    margin-top:5%;
+  }
+ .cardUp{
+    margin-top: 5%;
+  }
+  .arrowsAbout{
+    margin-top: 0%;
+  }
