@@ -84,6 +84,9 @@
     height: 40%;
     border-radius: 25px;
 }
+.arrows{
+    margin-bottom: 3%;
+}
 @media (max-width:768px){
     .itemWeb{
         display: none;

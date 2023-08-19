@@ -30,6 +30,9 @@
     flex-shrink: 0;
     justify-content: space-evenly;
 }
+.cards:hover{
+    background-color: rgb(64 110 228);
+}
 .cardTitle{
     color: #FFF;
     font-family: 'Be Vietnam Pro',sans-serif;
@@ -67,6 +70,9 @@ line-height: 146.25%; /* 146.25% */
 width: 60%;
 text-align: initial;
 }
+
+  
+
 @media(max-width:768px){
     .experience{
         display: flex;

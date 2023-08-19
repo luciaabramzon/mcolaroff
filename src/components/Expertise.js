@@ -7,21 +7,26 @@ import card4 from '../images/elipse2.svg'
 import card5 from '../images/polygon2.svg'
 import card6 from '../images/polygon3.svg'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 
 const Expertise=()=>{
+
+
     const cards=[
         {   
             image:card1,
             title:'UX/UI DESIGN',
             content:"Try here an informative text of what a UX/UI designer does.",
-            link:'/uxui'
+            link:'/uxui',
+            color:'rgb(64 110 228)'
         },
         {
             image:card2,
             title:"PHOTOGRAPH",
             content:"Seeking a different perspective, I work with product photography both professionally and as a hobby",
-            link:'/photograph'
+            link:'/photograph',
+            color:'red'
         },
         {
             image:card3,
@@ -48,6 +53,13 @@ const Expertise=()=>{
             link:'/collage'
         }
     ]
+    const handleHover = (event, color) => {
+        event.target.style.backgroundColor = color;
+      };
+    
+      const handleHoverExit = (event) => {
+        event.target.style.backgroundColor = '#1B1B1B'; 
+      };
     return(
         <div className='expertise'>
             <div className='experience'>
@@ -58,7 +70,11 @@ const Expertise=()=>{
                 <div className='cardsContent'>
                     {cards.map((card)=>( 
                         <Link to={card.link} hash='top'>
-                        <div className='cards' key={card.title}>
+                        <div className='cards'
+                         key={card.title}
+                         onMouseEnter={(e) => handleHover(e, card.color)}
+                        onMouseLeave={(e) => handleHoverExit(e)}
+                            >
                         <img className='icon' src={card.image}/>
                         <p className='cardTitle'>{card.title}</p>
                         <p className='cardInfo'>{card.content}</p>
@@ -72,3 +88,5 @@ const Expertise=()=>{
     )
 }
 export default Expertise
+
+
