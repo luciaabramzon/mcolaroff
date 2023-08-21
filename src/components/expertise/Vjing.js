@@ -1,6 +1,6 @@
 import '../../styles/uxui.css'
 import NavExpertise from './NavExpertise'
-import elipse from '../../images/elipseColor.svg'
+import polygon from '../../images/polygonLoader.svg'
 import ProjectRight from './ProjectRight'
 import projectR from '../../images/projectR.svg'
 import ProjectLeft from './ProjectLeft'
@@ -38,11 +38,15 @@ return(
         (
             <>
             <NavExpertise/>
-        <div className='firstUx'>
+            <div className='firstUx'>
             <div className='textUx'>
                 <div className='titleUx'>
-                    <img src={elipse} className='elipseUx'/>
+                    <div className='imageEx'>
+                    <img src={polygon} className='elipseUx'/>
+                    </div>
+                    <div className='titleEx'>
                     <h1>Vjing</h1>
+                    </div>
                 </div>
                 <div className='paragraphUx'>
                     <p>
@@ -52,9 +56,12 @@ return(
             </div>
             <div className='contactUx'>
                 <div className='elipseUxUi'>
-                <img src={elipse} />
+                <img src={polygon} className='circleAnimation' />
                 </div>
-                <a href='#footer'><button className='contactMeUx'>Contact Me</button></a>   
+                <div className='buttonContactEx'>
+                <a href='#footer'><button className='contactMeUx contactMeVj'>Contact Me</button></a>   
+                </div>
+               
             </div>
         </div>
          <div className='projects'>

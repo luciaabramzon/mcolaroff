@@ -26,31 +26,35 @@ const Expertise=()=>{
             title:"PHOTOGRAPH",
             content:"Seeking a different perspective, I work with product photography both professionally and as a hobby",
             link:'/photograph',
-            color:'red'
+            color:'#9747ff'
         },
         {
             image:card3,
             title:"VIDEO EDITING",
             content:"Video editing aimed at evoking emotions within the pieces I create",
-            link:'/video'
+            link:'/video',
+            color:'#e37056',
         },
         {
             image:card4,
             title:"BRANDING",
             content:"Video editing aimed at evoking emotions within the pieces I create",
-            link:'/branding'
+            link:'/branding',
+            color:"#e3b440",
         },
         {
             image:card5,
             title:"VJING",
             content:"Afficionate about real-time visuals, exploring my creativity.",
-            link:"/vjing"
+            link:"/vjing",
+            color:'#93bc97'
         },
         {
             image:card6,
             title:"COLLAGE",
             content:"Embarking on a journey through another galaxy in search of a surreal voyage.",
-            link:'/collage'
+            link:'/collage',
+            color:'#17aaa9'
         }
     ]
     const handleHover = (event, color) => {

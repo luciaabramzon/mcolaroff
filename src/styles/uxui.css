@@ -37,7 +37,9 @@ text-align: initial;
 }
 .elipseUxUi{
     display: flex;
-    justify-content: flex-start;
+    height: 40%;
+    width: 20%;
+    margin: 0 auto;
 }
 .contactMeUx{
     background-color: #406EE4;
@@ -54,7 +56,7 @@ border-radius: 5px;
 border: none;
 }
 .contactMeUx:hover{
-    background-color: #6F80CC;
+    background-color:black;
 }
 .projectR , .projectL{ 
     display: flex;
@@ -174,12 +176,42 @@ margin-top: 8%;
 .footerUx{
     margin-top: 3%;
 }
+
+.imageEx{
+    width: 40%;
+    overflow: hidden;
+}
+.elipseUx{
+    width: 40%;
+}
+.titleEx{
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.contactMePh{
+    background-color: #9747ff ;
+}
+.contactMeVE{
+    background-color: #e37056;
+}
+.contactMeBrand{
+    background-color: #e3b440;
+}
+.contactMeVj{
+    background-color: #93bc97;
+}
+.contactMeC{
+    background-color: #17aaa9;
+}
+  
 @media (max-width:768px){
     .contactUx{
         display: none;
     }
     .textUx{
         width: 90%;
+        margin-top: 10%;
     }
     .firstUx{
         display: flex;
@@ -191,7 +223,7 @@ margin-top: 8%;
         flex-direction: column;
     }
     .elipseUx{
-        width: 25%;
+        width: 100%;
     }
     .paragraphUx{
         width: 100%;
@@ -225,5 +257,13 @@ margin-top: 8%;
         align-items: stretch;
         margin-top: 8%;
         margin-bottom: 12%;
+    }
+    .imageEx{
+        margin-bottom: 6%;
+        display: flex;
+    }
+    .titleEx{
+        margin-bottom: 6%;
+        width: 100%;
     }
 }

@@ -4,9 +4,10 @@ body{
     padding:0;
 }
 .start{
-    background: radial-gradient(ellipse at 50% -30%, rgb(0 0 0 / 51%) 0%, rgb(0 0 0) 100%);
     width: 100%;
+    background: radial-gradient(ellipse at 50% -30%, rgb(0 0 0 / 51%) 0%, rgb(0 0 0) 100% );
 }
+
 .nav{
     display: flex;
     justify-content: center;

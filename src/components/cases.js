@@ -15,8 +15,13 @@ const Cases=({caseStudyP,caseStudySub,caseStudyT,caseStudyI,img1,img2,gif})=>{
             <img className='imageStudy1' src={img1}/>
         </div>
         <div className='imagesGif'>
-            <img className='image2' src={img2}/>
-            <img className='mgrGif' src={gif}/>
+            <div className='image2'>
+            <img className='' src={img2}/>
+            </div>
+           <div className='mgrGif'>
+           <img className='gif' src={gif}/>
+           </div>
+
         </div>
         </div>
     </div>

@@ -63,7 +63,6 @@
     display: flex;
     flex-direction: column;
     width: 45%;
-    justify-content: space-between;
     align-items: flex-end;
 }
 .image1{
@@ -82,7 +81,9 @@
 .mgrGif{
     width: 96%;
     height: 40%;
-    border-radius: 25px;
+}
+.gif{
+    border-radius: 20px;
 }
 .arrows{
     margin-bottom: 3%;

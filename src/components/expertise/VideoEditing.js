@@ -1,6 +1,7 @@
 import '../../styles/uxui.css'
+import '../../styles/animation.css'
 import NavExpertise from './NavExpertise'
-import elipse from '../../images/elipseColor.svg'
+import triangle from '../../images/triangleLoader.svg'
 import ProjectRight from './ProjectRight'
 import projectR from '../../images/projectR.svg'
 import ProjectLeft from './ProjectLeft'
@@ -41,8 +42,12 @@ return(
         <div className='firstUx'>
             <div className='textUx'>
                 <div className='titleUx'>
-                    <img src={elipse} className='elipseUx'/>
+                    <div className='imageEx'>
+                    <img src={triangle} className='elipseUx'/>
+                    </div>
+                    <div className='titleEx'>
                     <h1>Video Editing</h1>
+                    </div>
                 </div>
                 <div className='paragraphUx'>
                     <p>
@@ -52,9 +57,12 @@ return(
             </div>
             <div className='contactUx'>
                 <div className='elipseUxUi'>
-                <img src={elipse} />
+                <img src={triangle} className='triangleAnimation' />
                 </div>
-                <a href='#footer'><button className='contactMeUx'>Contact Me</button></a>   
+                <div className='buttonContactEx'>
+                <a href='#footer'><button className='contactMeUx contactMeVE'>Contact Me</button></a>   
+                </div>
+               
             </div>
         </div>
         <div className='projects'>
