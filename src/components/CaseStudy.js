@@ -6,6 +6,8 @@ import arrow2 from '../images/arrow2.svg'
 import gifDonapp from '../images/gifFinal.gif'
 import d1 from '../images/d1.webp'
 import d2 from '../images/d2.webp'
+import boar1 from '../images/boar1.svg'
+import boar3 from '../images/boar3.svg'
 import '../styles/caseStudy.css'
 import Cases from './cases'
 import CasesMobile from './casesMobile'
@@ -38,15 +40,24 @@ const CaseStudy = () => {
             gif: gif
         },
         {
-            caseStudyP: 'dona',
-            caseStudySub: 'dona',
-            caseStudyT: 'Re-Branding MGR SPORT...',
-            caseStudyI: 'For this redesign...',
+            caseStudyP: 'DONAPP',
+            caseStudySub: 'UX/UI',
+            caseStudyT: 'Donapp is an application aimed at promoting blood donation and providing assistance to the community.',
+            caseStudyI: 'Through a system of incentives and achievements and badges, we encourage blood donation. This project was conceived during the COVID-19 pandemic due to the shortage of blood in blood banks.',
             img1: gifDonapp,
             img2: d1,
             gif: d2   
+        },
+        {
+            caseStudyP: 'BOAR',
+            caseStudySub: 'BRANDING-PHOTOGRAPH-VIDEO-UX/UI',
+            caseStudyT: 'Creation of the complete image for a craft beer to launch in the market.',
+            caseStudyI: 'Through photographs, videos, social media posts, and an e-commerce platform, Boar was introduced as a beer that creates a unique experience with natural flavors',
+            img1:boar1,
+            img2: d1,
+            gif: boar3,  
         }
-        // Add more cases as needed
+        
     ];
 
     const currentCaseData = cases[currentCase];
