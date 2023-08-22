@@ -1,10 +1,12 @@
 import '../../styles/uxui.css'
 import NavExpertise from './NavExpertise'
 import circle from '../../images/circle2Loader.svg'
-import ProjectRight from './ProjectRight'
-import projectR from '../../images/projectR.svg'
-import ProjectLeft from './ProjectLeft'
-import projectL from '../../images/projectL.svg'
+import holistic from '../../images/holisticLogo.svg'
+import mw from '../../images/LogoMW.svg'
+import oa from '../../images/oalogo.svg'
+import donate from '../../images/donateLogo.svg'
+import periplo from '../../images/periploLogo.svg'
+import mgr from '../../images/mgrLogo.svg'
 import Footer from '../Footer'
 import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
@@ -64,33 +66,21 @@ return(
                
             </div>
         </div>
-        <div className='projects'>
-                <ProjectRight
-                number='01'
-                 projectName="Name of the proyect"
-                 projectText="Breif information about the proyect which problems  I solve as a designer."
-                 buttonUrl="/project-1"
-                 projectImage={projectR}
-                 />
-         </div>
-         <div className='projects'>
-                <ProjectLeft
-                numberLeft='02'
-                 projectLeftName="Name of the proyect"
-                 projectLeftText="Breif information about the proyect which problems  I solve as a designer."
-                 buttonLeftUrl="/project-1"
-                 projectLeftImage={projectL}
-                 />
-         </div>
-         <div className='projects'>
-                <ProjectRight
-                number='01'
-                 projectName="Name of the proyect"
-                 projectText="Breif information about the proyect which problems  I solve as a designer."
-                 buttonUrl="/project-1"
-                 projectImage={projectR}
-                 />
-         </div>
+        <div className='branding'>
+            <h1 className='tituloBranding'> Logofolio</h1>
+            <div className='branding1'>
+                <img className='imageRight' src={holistic}/>
+                <img className='imageLeft' src={mw}/>
+            </div>
+            <div className='branding1'>
+                <img className='imageRight' src={oa}/>
+                <img className='imageLeft' src={donate}/>
+            </div>
+            <div className='branding1'>
+                <img className='imageRight' src={periplo}/>
+                <img className='imageLeft' src={mgr}/>
+            </div>
+      </div>
          <div className='footerUx' id='footer'> 
             <Footer/>
          </div>

@@ -12,10 +12,22 @@ import boar3 from '../images/boar3.webp'
 import '../styles/caseStudy.css'
 import Cases from './cases'
 import CasesMobile from './casesMobile'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const CaseStudy = () => {
     const [currentCase, setCurrentCase] = useState(0);
+
+    const goToNextCase = () => {
+        setCurrentCase((prevCase) => {
+            return prevCase === cases.length - 1 ? 0 : prevCase + 1;
+        });
+    };
+
+   
+    useEffect(() => {
+        const interval = setInterval(goToNextCase, 20000); 
+        return () => clearInterval(interval);
+    }, []);
 
     const handleArrowClick = (direction) => {
         if (direction === 'prev') {

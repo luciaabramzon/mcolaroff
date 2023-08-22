@@ -65,7 +65,6 @@ border: none;
     margin: 0 auto;
 }
 .projectL{
-    background-color: black;
     border-radius: 10px;
 }
 .projectText{
@@ -84,6 +83,11 @@ width: 50%;
 }
 .projectImage{
     width: 50%;
+    overflow: hidden;
+}
+.imageProject{
+    width: 95%;
+    border-radius: 10px;
 }
 .projects{
     margin-top: 5%;
@@ -204,6 +208,44 @@ margin-top: 8%;
 .contactMeC{
     background-color: #17aaa9;
 }
+.videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+iframe{
+    margin-bottom: 4%;
+}
+.branding{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.imageRight, .imageLeft{
+    width: 49%;
+}
+.branding1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+    justify-content: space-between;
+}
+.tituloBranding{
+    color: #1B1B1B;
+text-align: center;
+font-family: Be Vietnam Pro;
+font-size: 58px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 120% */
+text-align: initial;
+}
   
 @media (max-width:768px){
     .contactUx{
@@ -238,7 +280,7 @@ margin-top: 8%;
     .projectL{
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         align-items: center;
         justify-content: center;
     }
@@ -265,5 +307,20 @@ margin-top: 8%;
     .titleEx{
         margin-bottom: 6%;
         width: 100%;
+    }
+    .branding1{
+        flex-direction: column;
+        margin-bottom: 2%;
+    }
+    .imageRight, .imageLeft{
+        width: 100%;
+        margin-bottom: 4%;
+    }
+    iframe{
+        width: 90%;
+    }
+    .tituloBranding{
+        text-align: center;
+        font-size: 45px;
     }
 }

@@ -65,32 +65,10 @@ return(
                
             </div>
         </div>
-        <div className='projects'>
-                <ProjectRight
-                number='01'
-                 projectName="Name of the proyect"
-                 projectText="Breif information about the proyect which problems  I solve as a designer."
-                 buttonUrl="/project-1"
-                 projectImage={projectR}
-                 />
-         </div>
-         <div className='projects'>
-                <ProjectLeft
-                numberLeft='02'
-                 projectLeftName="Name of the proyect"
-                 projectLeftText="Breif information about the proyect which problems  I solve as a designer."
-                 buttonLeftUrl="/project-1"
-                 projectLeftImage={projectL}
-                 />
-         </div>
-         <div className='projects'>
-                <ProjectRight
-                number='01'
-                 projectName="Name of the proyect"
-                 projectText="Breif information about the proyect which problems  I solve as a designer."
-                 buttonUrl="/project-1"
-                 projectImage={projectR}
-                 />
+        <div className='videos'>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UFwaWTmvjsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aZ---XY8ih8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_UYM77clud4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
          </div>
          <div className='footerUx' id='footer'> 
             <Footer/>

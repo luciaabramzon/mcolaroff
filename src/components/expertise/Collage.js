@@ -1,10 +1,18 @@
 import '../../styles/uxui.css'
 import NavExpertise from './NavExpertise'
 import rombo from '../../images/romboLoader.svg'
-import ProjectRight from './ProjectRight'
-import projectR from '../../images/projectR.svg'
-import ProjectLeft from './ProjectLeft'
-import projectL from '../../images/projectL.svg'
+import c1 from '../../images/collage1.svg'
+import c2 from '../../images/collage2.svg'
+import c3 from '../../images/collage3.svg'
+import c4 from '../../images/collage4.webp'
+import c5 from '../../images/collage5.svg'
+import c6 from '../../images/collage6.webp'
+import c7 from '../../images/collage7.webp'
+import c8 from '../../images/collage8.svg'
+import c9 from '../../images/collage9.webp'
+import c10 from '../../images/collage10.webp'
+import c11 from '../../images/collage11.webp'
+import c12 from '../../images/collage12.webp'
 import Footer from '../Footer'
 import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
@@ -64,32 +72,31 @@ return(
                
             </div>
         </div>
-        <div className='projects'>
-                <ProjectRight
-                number='01'
-                 projectName="Name of the proyect"
-                 projectText="Breif information about the proyect which problems  I solve as a designer."
-                 buttonUrl="/project-1"
-                 projectImage={projectR}
-                 />
-         </div>
-         <div className='projects'>
-                <ProjectLeft
-                numberLeft='02'
-                 projectLeftName="Name of the proyect"
-                 projectLeftText="Breif information about the proyect which problems  I solve as a designer."
-                 buttonLeftUrl="/project-1"
-                 projectLeftImage={projectL}
-                 />
-         </div>
-         <div className='projects'>
-                <ProjectRight
-                number='01'
-                 projectName="Name of the proyect"
-                 projectText="Breif information about the proyect which problems  I solve as a designer."
-                 buttonUrl="/project-1"
-                 projectImage={projectR}
-                 />
+        <div className='branding'>
+            <div className='branding1'>
+                <img className='imageRight' src={c1}/>
+                <img className='imageLeft' src={c2}/>
+            </div>
+            <div className='branding1'>
+                <img className='imageRight' src={c3}/>
+                <img className='imageLeft' src={c4}/>
+            </div>
+            <div className='branding1'>
+                <img className='imageRight' src={c5}/>
+                <img className='imageLeft' src={c6}/>
+            </div>
+            <div className='branding1'>
+                <img className='imageRight' src={c7}/>
+                <img className='imageLeft' src={c8}/>
+            </div>
+            <div className='branding1'>
+                <img className='imageRight' src={c9}/>
+                <img  className='imageLeft' src={c10}/>
+            </div>
+            <div className='branding1'>
+                <img className='imageRight' src={c11}/>
+                <img className='imageLeft' src={c12}/>
+            </div>
          </div>
          <div className='footerUx' id='footer'> 
             <Footer/>

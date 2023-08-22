@@ -12,7 +12,7 @@ const ProjectLeft = ({ projectLeftName, projectLeftText, buttonLeftUrl,projectLe
         <p className='projectLeftNumber'>{numberLeft}</p>
         <h3 className='projectLeftName'>{projectLeftName}</h3>
         <p className='projectLeftText'>{projectLeftText}</p>
-        <a href={buttonLeftUrl}><button className='buttonProject'>Show Project</button></a>
+        <a href={buttonLeftUrl} target="_blank" rel="noopener noreferrer"><button className='buttonProject'>Show Project</button></a>
         </div>
       </div>
   

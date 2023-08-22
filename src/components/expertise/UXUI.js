@@ -10,7 +10,8 @@ import Footer from '../Footer'
 import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Loader from '../Loader'
-import { EmojiKiss } from 'react-bootstrap-icons'
+import boarUx from '../../images/boarux.svg'
+import donapp from '../../images/donappux.webp'
 
 
 
@@ -69,19 +70,19 @@ return(
     <div className='projects'>
             <ProjectRight
             number='01'
-             projectName="Name of the proyect"
-             projectText="Breif information about the proyect which problems  I solve as a designer."
-             buttonUrl="/project-1"
-             projectImage={projectR}
+             projectName='Boar'
+             projectText="Creation of the complete image for a craft beer to launch in the market."
+             buttonUrl="https://www.behance.net/gallery/144309983/Boar-Cerveza-Natural"
+             projectImage={boarUx}
              />
      </div>
      <div className='projects'>
             <ProjectLeft
             numberLeft='02'
-             projectLeftName="Name of the proyect"
-             projectLeftText="Breif information about the proyect which problems  I solve as a designer."
-             buttonLeftUrl="/project-1"
-             projectLeftImage={projectL}
+             projectLeftName="Donapp"
+             projectLeftText="Donapp is an application aimed at promoting blood donation and providing assistance to the community."
+             buttonLeftUrl="https://www.behance.net/gallery/100876611/DonApp"
+             projectLeftImage={donapp}
              />
      </div>
      <div className='projects'>
