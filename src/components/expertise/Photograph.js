@@ -28,9 +28,22 @@ import Loader from '../Loader'
 
 
 
+
 const Photograph=()=>{
     const [isLoading, setLoading] = useState(true);
     const location = useLocation();
+    const [modalImage, setModalImage] = useState(null);
+
+
+    const openModal = (imageUrl) => {
+        setModalImage(imageUrl);
+        console.log(imageUrl)
+      };
+
+      const closeModal = () => {
+        setModalImage(null);
+      };
+
     useEffect(() => {
     
         const loadingTimeout = setTimeout(() => {
@@ -81,51 +94,99 @@ return(
             </div>
         </div>
         <div className='passionPhotos photoContainer'>
+        {modalImage && (
+      <div className='image-modal-overlay' onClick={closeModal}>
+        <div className='image-modal'>
+          <img src={modalImage} alt='Large' />
+          <div className='close-modal' onClick={closeModal}>
+            <span>&times;</span>
+          </div>
+        </div>
+      </div>
+    )}
                 <div className='passions'>
                 <div className='passionsImgContainer'>
-                    <img className='passionsImg' src={p1}/>
+                    <img 
+                    className='passionsImg' 
+                    src={p1}
+                    onClick={() => openModal(p1)}  />
                     </div>
                     <div className='passionsImgContainer'>
-                    <img className='passionsImg' src={p2}/>
+                    <img className='passionsImg'
+                     src={p2}
+                     onClick={() => openModal(p2)} />
                     </div>
                     <div className='passionsImgContainer'>
-                    <img className='passionsImg' src={p3}/>
+                    <img 
+                    className='passionsImg'
+                     src={p3}
+                     onClick={() => openModal(p3)} />
                     </div>
                 </div>
                 <div className='passions'>
                 <div className='passionsImgContainer'>
-                    <img className='passionsImg' src={p4}/>
+                    <img 
+                    className='passionsImg' 
+                    src={p4}
+                    onClick={() => openModal(p4)} />
                     </div>
                     <div className='passionsImgContainer'>
-                    <img className='passionsImg' src={p5}/>
+                    <img 
+                    className='passionsImg' 
+                    src={p5}
+                    onClick={() => openModal(p5)} />
                     </div>
                     <div className='passionsImgContainer'>
-                    <img className='passionsImg' src={p6}/>
+                    <img 
+                    className='passionsImg' 
+                    src={p6}
+                    onClick={() => openModal(p6)} />
                     </div>
                 </div>
                 <div className='passions'>
                 <div className='passionsImgContainer'>
-                    <img  className='passionsImg' src={p7}/>
+                    <img  
+                    className='passionsImg' 
+                    src={p7}
+                    onClick={() => openModal(p7)} />
                     </div>
                     <div className='passionsImgContainer'>
-                    <img className='passionsImg' src={p8}/>
+                    <img 
+                    className='passionsImg' 
+                    src={p8}
+                    onClick={() => openModal(p8)} />
                     </div>
                     <div className='passionsImgContainer'>
-                    <img className='passionsImg' src={p9}/>
+                    <img 
+                    className='passionsImg' 
+                    src={p9}
+                    onClick={() => openModal(p9)} />
                     </div>
                     <div className='passionsImgContainer'>
-                    <img className='passionsImg' src={p10}/>
+                    <img 
+                    className='passionsImg' 
+                    src={p10}
+                    onClick={() => openModal(p10)} />
                     </div>
                 </div>
                 <div className='passions'>
                 <div className='passionsImgContainer'>
-                    <img className='passionsImg' src={p11}/>
+                    <img 
+                    className='passionsImg' 
+                    src={p11}
+                    onClick={() => openModal(p11)} />
                     </div>
                     <div className='passionsImgContainer'>
-                    <img className='passionsImg' src={p12}/>
+                    <img 
+                    className='passionsImg' 
+                    src={p12}
+                    onClick={() => openModal(p12)} />
                     </div>
                     <div className='passionsImgContainer'>
-                    <img className='passionsImg'  src={p13}/>
+                    <img 
+                    className='passionsImg'  
+                    src={p13}
+                    onClick={() => openModal(p13)} />
                     </div>
                 </div>
                 <div className='passions'>
@@ -150,7 +211,9 @@ return(
                     <img className='passionsImg' src={p19}/>
                     </div>
                 </div>
+    
             </div>
+     
          <div className='footerUx' id='footer'> 
             <Footer/>
          </div>
