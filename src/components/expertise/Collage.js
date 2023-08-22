@@ -58,7 +58,7 @@ return(
                 </div>
                 <div className='paragraphUx'>
                     <p>
-                    Ihighly recommend Martin for any UX/UI design role, particularly in the web3 blockchain DeFi space. As a UX/UI Designer at The Sandbox Game, Martin demonstrated exceptional skill and creativity, a deep understanding of the blockchain industry and DeFi space, and a positive attitude and strong work ethic. Their designs were both functional and aesthetically pleasing, and they were always willing to collaborate and provide constructive feedback. Martin would make a significant impact on any design team they join
+                    To unlock my creativity, I strive to craft parallel universes through surreal compositions. I seek to uncover unsettling yet captivating elements within these artworks, allowing my imagination to soar to realms untouched by the constraints of everyday life
                     </p>
                 </div>
             </div>
@@ -72,28 +72,28 @@ return(
                
             </div>
         </div>
-        <div className='branding'>
-            <div className='branding1'>
+        <div className='collage'>
+            <div className='collage1'>
                 <img className='imageRight' src={c1}/>
                 <img className='imageLeft' src={c2}/>
             </div>
-            <div className='branding1'>
+            <div className='collage1'>
                 <img className='imageRight' src={c3}/>
                 <img className='imageLeft' src={c4}/>
             </div>
-            <div className='branding1'>
+            <div className='collage1'>
                 <img className='imageRight' src={c5}/>
                 <img className='imageLeft' src={c6}/>
             </div>
-            <div className='branding1'>
+            <div className='collage1'>
                 <img className='imageRight' src={c7}/>
                 <img className='imageLeft' src={c8}/>
             </div>
-            <div className='branding1'>
+            <div className='collage1'>
                 <img className='imageRight' src={c9}/>
                 <img  className='imageLeft' src={c10}/>
             </div>
-            <div className='branding1'>
+            <div className='collage1'>
                 <img className='imageRight' src={c11}/>
                 <img className='imageLeft' src={c12}/>
             </div>

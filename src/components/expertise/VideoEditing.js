@@ -51,7 +51,7 @@ return(
                 </div>
                 <div className='paragraphUx'>
                     <p>
-                    Ihighly recommend Martin for any UX/UI design role, particularly in the web3 blockchain DeFi space. As a UX/UI Designer at The Sandbox Game, Martin demonstrated exceptional skill and creativity, a deep understanding of the blockchain industry and DeFi space, and a positive attitude and strong work ethic. Their designs were both functional and aesthetically pleasing, and they were always willing to collaborate and provide constructive feedback. Martin would make a significant impact on any design team they join
+                    In a world saturated with audiovisual content, I have learned to communicate through the language of visuals, effectively evoking emotions in the audience that views my creations. This ability to captivate, move, and even evoke feelings of fear by simply creating the right atmosphere has become a powerful skill in my repertoire.
                     </p>
                 </div>
             </div>
@@ -66,9 +66,12 @@ return(
             </div>
         </div>
         <div className='videos'>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UFwaWTmvjsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/aZ---XY8ih8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_UYM77clud4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/713405474?h=fbe0a1ba95" width="800" height="500" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/713405474">Reel 2022 Martin Colaroff.mp4</a> from <a href="https://vimeo.com/mcolaroff">mcolaroff</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                <iframe width="800" height="500" src="https://www.youtube.com/embed/UFwaWTmvjsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="800" height="500" src="https://www.youtube.com/embed/aZ---XY8ih8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="800" height="500" src="https://www.youtube.com/embed/_UYM77clud4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         
          </div>
          <div className='footerUx' id='footer'> 
             <Footer/>

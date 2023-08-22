@@ -17,6 +17,26 @@ import Loader from '../Loader'
 const Branding=()=>{
     const [isLoading, setLoading] = useState(true);
     const location = useLocation();
+    const logos=[
+        {
+            logo:holistic
+        },
+        {
+            logo:mw
+        },
+        {
+            logo:oa
+        },
+        {
+            logo:donate
+        },
+        {
+            logo:periplo
+        },
+        {
+            logo: mgr
+        }
+    ]
     useEffect(() => {
     
         const loadingTimeout = setTimeout(() => {
@@ -66,21 +86,18 @@ return(
                
             </div>
         </div>
+        <div className='logos'>
+        <h1 className='tituloBranding'>Logofolio</h1>
         <div className='branding'>
-            <h1 className='tituloBranding'> Logofolio</h1>
-            <div className='branding1'>
-                <img className='imageRight' src={holistic}/>
-                <img className='imageLeft' src={mw}/>
-            </div>
-            <div className='branding1'>
-                <img className='imageRight' src={oa}/>
-                <img className='imageLeft' src={donate}/>
-            </div>
-            <div className='branding1'>
-                <img className='imageRight' src={periplo}/>
-                <img className='imageLeft' src={mgr}/>
-            </div>
-      </div>
+            {
+                logos.map((log)=>(
+                    <div className='branding1'>
+                        <img className='imagesBranding' src={log.logo}/>
+                        </div>
+                ))
+            }
+        </div>
+        </div>
          <div className='footerUx' id='footer'> 
             <Footer/>
          </div>

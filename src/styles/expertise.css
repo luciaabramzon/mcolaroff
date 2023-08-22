@@ -76,15 +76,20 @@ text-align: initial;
     .experience{
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     .cardsContent{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         overflow: scroll;
+        padding-left: 8%;
     }
     .me{
+        width: 85%;
+        margin:0 auto;
         margin-top: 15%;
+
     }
     .me2{
         margin-bottom: 5% !important;

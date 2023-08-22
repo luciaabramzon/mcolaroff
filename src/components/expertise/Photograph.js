@@ -66,7 +66,7 @@ return(
                 </div>
                 <div className='paragraphUx'>
                     <p>
-                    Ihighly recommend Martin for any UX/UI design role, particularly in the web3 blockchain DeFi space. As a UX/UI Designer at The Sandbox Game, Martin demonstrated exceptional skill and creativity, a deep understanding of the blockchain industry and DeFi space, and a positive attitude and strong work ethic. Their designs were both functional and aesthetically pleasing, and they were always willing to collaborate and provide constructive feedback. Martin would make a significant impact on any design team they join
+                    It began as a hobby that later became an integral part of my work. The art of composing a photograph, seeking the perfect moment, and capturing the essence of a moment has made photography an essential part of my life
                     </p>
                 </div>
             </div>
@@ -80,7 +80,7 @@ return(
                
             </div>
         </div>
-        <div className='passionPhotos'>
+        <div className='passionPhotos photoContainer'>
                 <div className='passions'>
                 <div className='passionsImgContainer'>
                     <img className='passionsImg' src={p1}/>

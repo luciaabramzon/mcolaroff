@@ -218,7 +218,7 @@ margin-top: 8%;
 iframe{
     margin-bottom: 4%;
 }
-.branding{
+.collage{
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -230,7 +230,7 @@ iframe{
 .imageRight, .imageLeft{
     width: 49%;
 }
-.branding1{
+.collage1{
     display: flex;
     flex-direction: row;
     margin-bottom: 3%;
@@ -245,8 +245,33 @@ font-style: normal;
 font-weight: 700;
 line-height: 120%; /* 120% */
 text-align: initial;
+width: 67%;
+margin: 0 auto;
+margin-bottom: 4%;
 }
-  
+.branding{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    margin: 0 auto;
+    justify-items: center;
+    gap: 1%;
+}
+.branding1{
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.imagesBranding{
+    width: 90%;
+    border-radius: 10px;
+}
+.logos{
+    margin-top: 5%;
+}
+.photoContainer{
+    margin-top: 5%;
+}
 @media (max-width:768px){
     .contactUx{
         display: none;
@@ -308,7 +333,7 @@ text-align: initial;
         margin-bottom: 6%;
         width: 100%;
     }
-    .branding1{
+    .collage1{
         flex-direction: column;
         margin-bottom: 2%;
     }
@@ -320,7 +345,34 @@ text-align: initial;
         width: 90%;
     }
     .tituloBranding{
-        text-align: center;
+        width: 90%;
         font-size: 45px;
     }
+    .logoBrands{
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+    }
+    .branding{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        margin-bottom: 10%;
+        width: 100%;
+        padding: 8%;
+    }
+    .branding1{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    flex-shrink: 0;
+    width: 95%;
+    justify-content: space-evenly;
+    }
+    .imagesBranding{
+        width: 95%;
+    }
+
 }
