@@ -272,15 +272,14 @@ margin-bottom: 4%;
 .photoContainer{
     margin-top: 5%;
 }
-/* Estilo para el modal */
-/* Estilo para el modal */
+
 .image-modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -305,7 +304,31 @@ margin-bottom: 4%;
     font-size: 24px;
     color: gainsboro; 
   }
+
+.modal-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    user-select: none;
+    transition: background-color 0.3s ease-in-out;
+  }
   
+  .modal-arrow.prev {
+    left: 18px;
+  }
+
+  .modal-arrow.next {
+    right: 18px;
+  }
+  .videos iframe{
+    width: 800px;
+    height: 500px;
+  }
   
 @media (max-width:768px){
     .contactUx{
@@ -409,5 +432,16 @@ margin-bottom: 4%;
     .imagesBranding{
         width: 95%;
     }
-
+    .videos iframe {
+        width: 310px;
+        height: 195px; 
+      }
+ 
+}
+@media (min-width: 768px) and (max-width: 1023px){
+   
+    .videos iframe {
+        width: 600px;
+        height: 350px; 
+      }
 }

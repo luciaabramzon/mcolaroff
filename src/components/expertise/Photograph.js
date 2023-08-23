@@ -33,17 +33,60 @@ const Photograph=()=>{
     const [isLoading, setLoading] = useState(true);
     const location = useLocation();
     const [modalImage, setModalImage] = useState(null);
+    const [currentIndex, setCurrentIndex] = useState(null);
 
+    // const imagesData = [
+    //     { src: p1},
+    //     { src: p2},
+    //     { src: p3},
+    //     {src:p4},
+    //     {src:p5},
+    //     {src:p6},
+    //     {src:p7},
+    //     {src:p8},
+    //     {src:p9},
+    //     {src:p10},
+    //     {src:p11},
+    //     {src:p12},
+    //     {src:p13},
+    //     {src:p14},
+    //     {src:p15},
+    //     {src:p16},
+    //     {src:p17},
+    //     {src:p18},
+    //     {src:p19},
+    //   ];
 
-    const openModal = (imageUrl) => {
+    const imagesData = [
+        p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19
+      ];
+    
+      const openModal = (imageUrl) => {
+        const index = imagesData.findIndex((data) => data === imageUrl);
+        setCurrentIndex(index);
         setModalImage(imageUrl);
-        console.log(imageUrl)
       };
-
+      
       const closeModal = () => {
         setModalImage(null);
       };
 
+      const goToPrevImage = (e) => {
+        e.stopPropagation();
+        if (currentIndex !== null && currentIndex > 0) {
+          setCurrentIndex(currentIndex - 1);
+          setModalImage(imagesData[currentIndex - 1]);
+        }
+      };
+      
+      const goToNextImage = (e) => {
+        e.stopPropagation();
+        if (currentIndex !== null && currentIndex < imagesData.length - 1) {
+          setCurrentIndex(currentIndex + 1);
+          setModalImage(imagesData[currentIndex + 1]);
+        }
+      };
+    
     useEffect(() => {
     
         const loadingTimeout = setTimeout(() => {
@@ -58,6 +101,7 @@ const Photograph=()=>{
           clearTimeout(loadingTimeout);
         };
       }, [location]);
+      
 
 return(
     <div className='uxui'>
@@ -95,15 +139,18 @@ return(
         </div>
         <div className='passionPhotos photoContainer'>
         {modalImage && (
-      <div className='image-modal-overlay' onClick={closeModal}>
-        <div className='image-modal'>
-          <img src={modalImage} alt='Large' />
-          <div className='close-modal' onClick={closeModal}>
-            <span>&times;</span>
-          </div>
-        </div>
-      </div>
-    )}
+              <div className='image-modal-overlay' onClick={closeModal}>
+                <div className='image-modal'>
+                  <span className='modal-arrow prev' onClick={goToPrevImage}>&#8249;</span>
+                  <img src={modalImage} alt='Large' />
+                  <span className='modal-arrow next' onClick={goToNextImage}>&#8250;</span>
+                  <div className='close-modal' onClick={closeModal}>
+                    <span>&times;</span>
+                  </div>
+                </div>
+              </div>
+            )}
+
                 <div className='passions'>
                 <div className='passionsImgContainer'>
                     <img 
@@ -191,18 +238,30 @@ return(
                 </div>
                 <div className='passions'>
                 <div className='passionsImgContainer'>
-                    <img className='passionsImg' src={p14}/>
+                    <img 
+                    className='passionsImg' 
+                    src={p14}
+                    onClick={() => openModal(p14)}/>
                     </div>
                     <div className='passionsImgContainer'>
-                    <img className='passionsImg' src={p15}/>
+                    <img 
+                    className='passionsImg'
+                     src={p15}
+                     onClick={() => openModal(p15)}/>
                     </div>
                     <div className='passionsImgContainer'>
-                    <img className='passionsImg' src={p16}/>
+                    <img 
+                    className='passionsImg'
+                     src={p16}
+                     onClick={() => openModal(p16)}/>
                     </div>
                 </div>
                 <div className='passionsLast'>
                 <div className='passionsImgContainer'>
-                    <img className='passionsImg' src={p17}/>
+                    <img 
+                    className='passionsImg'
+                     src={p17}
+                     onClick={() => openModal(p17)}/>
                     </div>
                     <div className='passionsImgContainer'>
                     <img className='passionsImg' src={p18}/>

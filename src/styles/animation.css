@@ -45,7 +45,7 @@
   }
 
   .animationImage {
-    animation: bounce 2s infinite; /* Nombre de la animación, duración y repetición infinita */
+    animation: bounce 2s infinite; 
   }
   
 @keyframes bounce {

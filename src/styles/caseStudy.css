@@ -160,3 +160,37 @@
     }
     
 }
+@media (min-width: 768px) and (max-width: 1023px){
+    .itemWeb{
+        display: none;
+    }
+    .itemMobile{
+        display: flex;
+        width: 100%;
+    }
+    .item1{
+        width: 100%;
+    }
+    .caseStudy{
+        width: 100%;
+        align-items: center;
+    }
+    .caseStudyP{
+        font-size: 25px;
+    }
+    .caseStudySub{
+        font-size:20px
+    }
+    .imagesStudy{
+        margin-bottom: 5%;
+        height: auto;
+    }
+    .imagesGif{
+        display: flex;
+        justify-content: space-around;
+    }
+    .mgrGif{
+        height: 35%;
+        border-radius: 20px;
+    }
+}

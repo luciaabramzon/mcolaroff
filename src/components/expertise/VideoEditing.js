@@ -2,10 +2,6 @@ import '../../styles/uxui.css'
 import '../../styles/animation.css'
 import NavExpertise from './NavExpertise'
 import triangle from '../../images/triangleLoader.svg'
-import ProjectRight from './ProjectRight'
-import projectR from '../../images/projectR.svg'
-import ProjectLeft from './ProjectLeft'
-import projectL from '../../images/projectL.svg'
 import Footer from '../Footer'
 import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
@@ -66,11 +62,10 @@ return(
             </div>
         </div>
         <div className='videos'>
-        <iframe src="https://player.vimeo.com/video/713405474?h=fbe0a1ba95" width="800" height="500" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/713405474">Reel 2022 Martin Colaroff.mp4</a> from <a href="https://vimeo.com/mcolaroff">mcolaroff</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-                <iframe width="800" height="500" src="https://www.youtube.com/embed/UFwaWTmvjsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="800" height="500" src="https://www.youtube.com/embed/aZ---XY8ih8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="800" height="500" src="https://www.youtube.com/embed/_UYM77clud4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/713405474?h=fbe0a1ba95" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                <iframe  src="https://www.youtube.com/embed/UFwaWTmvjsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe  src="https://www.youtube.com/embed/aZ---XY8ih8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe  src="https://www.youtube.com/embed/_UYM77clud4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
          
          </div>
          <div className='footerUx' id='footer'> 

@@ -11,8 +11,8 @@ import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Loader from '../Loader'
 import boarUx from '../../images/boarux.svg'
-import donapp from '../../images/donappux.webp'
-
+import donapp from '../../images/uxui.webp'
+import Expertise from '../Expertise'
 
 
 const UXUI=()=>{
@@ -93,6 +93,9 @@ return(
              buttonUrl="/project-1"
              projectImage={projectR}
              />
+     </div>
+     <div className='cardsExperience'>
+        <Expertise/>
      </div>
      <div className='footerUx' id='footer'> 
         <Footer/>

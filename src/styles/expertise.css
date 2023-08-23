@@ -101,3 +101,21 @@ text-align: initial;
         margin-top: 5%;
     }
 }
+@media (min-width: 768px) and (max-width: 1023px){
+   .experience{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   }
+   .me{
+    width: 70%;
+    padding-left: 8%;
+   }
+   .cardsContent{
+    display: flex;
+    overflow-x: auto;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 8%;
+   }
+}

@@ -71,9 +71,10 @@ justify-content: space-evenly;
   .aboutmeCardsContainer {
     margin-bottom: 20px;
     overflow-x: scroll;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     margin-top:5%;
+    padding-left: 8%;
   }
  .cardUp{
     margin-top: 5%;
@@ -102,3 +103,19 @@ justify-content: space-evenly;
     }
 
   }
+  @media (min-width: 768px) and (max-width: 1023px){
+  .cardContainer{
+    width: 55%;
+  }
+  .aboutmeCardsContainer{
+    width: 100%;
+    padding-left: 8%;
+  }
+  .passions{
+    display: flex;
+    flex-direction: column;
+  }
+  .passionsImg{
+    margin-bottom: 5%;
+  }
+}
