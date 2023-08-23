@@ -329,7 +329,18 @@ margin-bottom: 4%;
     width: 800px;
     height: 500px;
   }
-  
+  .cardSection{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    overflow: scroll;
+    padding-left: 8%;
+ }
+ .experienceCards{
+    margin-bottom: 30%;
+ }
 @media (max-width:768px){
     .contactUx{
         display: none;
@@ -436,7 +447,7 @@ margin-bottom: 4%;
         width: 310px;
         height: 195px; 
       }
- 
+
 }
 @media (min-width: 768px) and (max-width: 1023px){
    

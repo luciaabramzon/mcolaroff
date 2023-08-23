@@ -13,6 +13,7 @@ import Loader from '../Loader'
 import boarUx from '../../images/boarux.svg'
 import donapp from '../../images/uxui.webp'
 import Expertise from '../Expertise'
+import CardsContent from '../cardsContent'
 
 
 const UXUI=()=>{
@@ -95,7 +96,9 @@ return(
              />
      </div>
      <div className='cardsExperience'>
-        <Expertise/>
+        <CardsContent 
+        customClassName='cardSection'
+        customCardClassName='experienceCards'/>
      </div>
      <div className='footerUx' id='footer'> 
         <Footer/>
