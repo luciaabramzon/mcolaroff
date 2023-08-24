@@ -21,9 +21,7 @@ const Start =()=>{
             </div>
         </div>
         <div className='title'>
-        <div className='name'>
-            Martin Colaroff
-        </div>
+   
         <div className='about'>
          <p>   Multimedia designer 
             crafting innovative solutions

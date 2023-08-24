@@ -53,21 +53,28 @@
     font-weight: 400;
     line-height: 137.5%; /* 137.5% */
     width: 60%;
+  
 }
 .imagesStudy{
     margin-top: 5%;
     display: flex;
     flex-direction: row;
     width: 55%;
+    overflow: hidden;
+    height: 499x;
 }
 .imagesGif{
     display: flex;
     flex-direction: column;
     width: 45%;
     align-items: flex-end;
+    object-fit: contain;
+    overflow: hidden;
 }
 .image1{
     width: 50%;
+    object-fit: contain;
+    overflow: hidden;
  
 }
 .imageStudy1{
