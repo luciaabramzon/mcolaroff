@@ -349,7 +349,36 @@ margin-bottom: 4%;
  .cardTextMobile{
     display: none;
  }
-
+ .buttonBranding{
+    background-color:#e3b440 !important
+ }
+ .buttonBranding:hover{
+    background-color: black !important;
+ }
+ .collageButton{
+    background-color: #17aaa9 !important;
+ }
+ .collageButton:hover{
+    background-color: black !important;
+ }
+.photographColor{
+    background-color: #9747ff !important;
+}
+.photographColor:hover{
+    background-color: black !important;
+}
+.veButton{
+    background-color: #e37056 !important;
+}
+.veButton:hover{
+    background-color: black !important;
+}
+.vjButton{
+    background-color: #93bc97 !important;
+}
+.vjButton:hover{
+    background-color: black !important;
+}
 @media (max-width:768px){
     .contactUx{
         display: none;

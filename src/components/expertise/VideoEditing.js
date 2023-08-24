@@ -43,6 +43,7 @@ return(
         experienceParagraph='In a world saturated with audiovisual content, I have learned to communicate through the language of visuals, effectively evoking emotions in the audience that views my creations. This ability to captivate, move, and even evoke feelings of fear by simply creating the right atmosphere has become a powerful skill in my repertoire.'
         animationImage={triangle}
         animation='triangleAnimation'
+        buttonContactColor='veButton'
         />
 
         <div className='videos'>

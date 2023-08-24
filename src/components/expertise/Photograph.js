@@ -97,6 +97,7 @@ return(
         experienceParagraph='It began as a hobby that later became an integral part of my work. The art of composing a photograph, seeking the perfect moment, and capturing the essence of a moment has made photography an essential part of my life'
         animationImage={cuadrado}
         animation='cuadradoAnimation'
+        buttonContactColor='photographColor'
         />
         <div className='passionPhotos photoContainer'>
         {modalImage && (

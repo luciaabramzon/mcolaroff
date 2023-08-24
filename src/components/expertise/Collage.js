@@ -54,6 +54,7 @@ return(
         experienceParagraph='To unlock my creativity, I strive to craft parallel universes through surreal compositions. I seek to uncover unsettling yet captivating elements within these artworks, allowing my imagination to soar to realms untouched by the constraints of everyday life'
         animationImage={rombo}
         animation='animationImage'
+        buttonContactColor='collageButton'
         />
         
         <div className='collage'>

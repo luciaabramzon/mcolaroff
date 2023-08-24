@@ -2,7 +2,7 @@ import '../../styles/uxui.css'
 import '../../styles/animation.css'
 
 
-const First =({principalImage,experienceTitle,experienceParagraph,animationImage,animation})=>{
+const First =({principalImage,experienceTitle,experienceParagraph,animationImage,animation,buttonContactColor})=>{
     return(
 <div className='firstUx'>
         <div className='textUx'>
@@ -24,8 +24,8 @@ const First =({principalImage,experienceTitle,experienceParagraph,animationImage
             <div className='elipseUxUi'>
             <img src={animationImage} className={animation} />
             </div>
-            <div className='buttonContactEx'>
-            <a href='#footer'><button className='contactMeUx'>Contact Me</button></a>   
+            <div className='buttonContactEx' >
+            <a href='#footer'><button className={`contactMeUx ${buttonContactColor}`} >Contact Me</button></a>   
             </div>
            
         </div>
