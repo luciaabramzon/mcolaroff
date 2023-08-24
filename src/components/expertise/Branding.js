@@ -11,6 +11,8 @@ import Footer from '../Footer'
 import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Loader from '../Loader'
+import CardsContent from '../cardsContent'
+import First from './first'
 
 
 
@@ -60,32 +62,13 @@ return(
         (
             <>
             <NavExpertise/>
-            <div className='firstUx'>
-            <div className='textUx'>
-                <div className='titleUx'>
-                    <div className='imageEx'>
-                    <img src={circle} className='elipseUx'/>
-                    </div>
-                    <div className='titleEx'>
-                    <h1>Branding</h1>
-                    </div>
-                </div>
-                <div className='paragraphUx'>
-                    <p>
-                    Ihighly recommend Martin for any UX/UI design role, particularly in the web3 blockchain DeFi space. As a UX/UI Designer at The Sandbox Game, Martin demonstrated exceptional skill and creativity, a deep understanding of the blockchain industry and DeFi space, and a positive attitude and strong work ethic. Their designs were both functional and aesthetically pleasing, and they were always willing to collaborate and provide constructive feedback. Martin would make a significant impact on any design team they join
-                    </p>
-                </div>
-            </div>
-            <div className='contactUx'>
-                <div className='elipseUxUi'>
-                <img src={circle} className='polygonAnimation' />
-                </div>
-                <div className='buttonContactEx'>
-                <a href='#footer'><button className='contactMeUx contactMeBrand'>Contact Me</button></a>   
-                </div>
-               
-            </div>
-        </div>
+            <First
+        principalImage={circle}
+        experienceTitle='Branding'
+        experienceParagraph='Ihighly recommend Martin for any UX/UI design role, particularly in the web3 blockchain DeFi space. As a UX/UI Designer at The Sandbox Game, Martin demonstrated exceptional skill and creativity, a deep understanding of the blockchain industry and DeFi space, and a positive attitude and strong work ethic. Their designs were both functional and aesthetically pleasing, and they were always willing to collaborate and provide constructive feedback. Martin would make a significant impact on any design team they join'
+        animationImage={circle}
+        animation='polygonAnimation'
+        />
         <div className='logos'>
         <h1 className='tituloBranding'>Logofolio</h1>
         <div className='branding'>
@@ -98,6 +81,14 @@ return(
             }
         </div>
         </div>
+        <div className='cardsExperience'>
+        <CardsContent
+        customClassName='cardSection'
+        customCardClassName='experienceCards'
+        customCardMobileImage='cardImageMobile'
+        customCardMobileTitle='cardTitleMobile'
+        customCardMobileP='cardTextMobile'/>
+     </div>
          <div className='footerUx' id='footer'> 
             <Footer/>
          </div>

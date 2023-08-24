@@ -25,6 +25,8 @@ import Footer from '../Footer'
 import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Loader from '../Loader'
+import CardsContent from '../cardsContent'
+import First from './first'
 
 
 
@@ -34,29 +36,7 @@ const Photograph=()=>{
     const location = useLocation();
     const [modalImage, setModalImage] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(null);
-
-    // const imagesData = [
-    //     { src: p1},
-    //     { src: p2},
-    //     { src: p3},
-    //     {src:p4},
-    //     {src:p5},
-    //     {src:p6},
-    //     {src:p7},
-    //     {src:p8},
-    //     {src:p9},
-    //     {src:p10},
-    //     {src:p11},
-    //     {src:p12},
-    //     {src:p13},
-    //     {src:p14},
-    //     {src:p15},
-    //     {src:p16},
-    //     {src:p17},
-    //     {src:p18},
-    //     {src:p19},
-    //   ];
-
+    
     const imagesData = [
         p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19
       ];
@@ -111,32 +91,13 @@ return(
         (
             <>
             <NavExpertise/>
-            <div className='firstUx'>
-            <div className='textUx'>
-                <div className='titleUx'>
-                    <div className='imageEx'>
-                    <img src={cuadrado} className='elipseUx'/>
-                    </div>
-                    <div className='titleEx'>
-                    <h1>Photograph</h1>
-                    </div>
-                </div>
-                <div className='paragraphUx'>
-                    <p>
-                    It began as a hobby that later became an integral part of my work. The art of composing a photograph, seeking the perfect moment, and capturing the essence of a moment has made photography an essential part of my life
-                    </p>
-                </div>
-            </div>
-            <div className='contactUx'>
-                <div className='elipseUxUi'>
-                <img src={cuadrado}  className='cuadradoAnimation'/>
-                </div>
-                <div className='buttonContactEx'>
-                <a href='#footer'><button className='contactMeUx contactMePh' >Contact Me</button></a>   
-                </div>
-               
-            </div>
-        </div>
+            <First
+        principalImage={cuadrado}
+        experienceTitle='Photograph'
+        experienceParagraph='It began as a hobby that later became an integral part of my work. The art of composing a photograph, seeking the perfect moment, and capturing the essence of a moment has made photography an essential part of my life'
+        animationImage={cuadrado}
+        animation='cuadradoAnimation'
+        />
         <div className='passionPhotos photoContainer'>
         {modalImage && (
               <div className='image-modal-overlay' onClick={closeModal}>
@@ -272,7 +233,14 @@ return(
                 </div>
     
             </div>
-     
+            <div className='cardsExperience'>
+        <CardsContent
+        customClassName='cardSection'
+        customCardClassName='experienceCards'
+        customCardMobileImage='cardImageMobile'
+        customCardMobileTitle='cardTitleMobile'
+        customCardMobileP='cardTextMobile'/>
+     </div>
          <div className='footerUx' id='footer'> 
             <Footer/>
          </div>

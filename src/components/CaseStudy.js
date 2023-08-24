@@ -9,6 +9,9 @@ import d2 from '../images/d2.webp'
 import boar1 from '../images/boar1.webp'
 import boar2 from '../images/boar2.webp'
 import boar3 from '../images/boar3.webp'
+import ebalance1 from '../images/ebalance1.webp'
+import ebalance2 from '../images/ebalance2.webp'
+import ebalance3 from '../images/ebalance3.webp'
 import '../styles/caseStudy.css'
 import Cases from './cases'
 import CasesMobile from './casesMobile'
@@ -69,6 +72,14 @@ const CaseStudy = () => {
             img1:boar1,
             img2: boar2,
             gif: boar3,  
+        },{
+            caseStudyP: 'E-BALANCE',
+            caseStudySub: 'Product design - UX/UI',
+            caseStudyT: 'Preventing food waste is a collective responsibility.',
+            caseStudyI:"It's a series of smart kitchen products designed to uphold order, hygiene, and most importantly, prevent food wastage within the household",
+            img1:ebalance1,
+            img2: ebalance2,
+            gif: ebalance3,  
         }
         
     ];

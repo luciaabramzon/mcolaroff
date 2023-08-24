@@ -17,6 +17,8 @@ import Footer from '../Footer'
 import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Loader from '../Loader'
+import First from './first'
+import CardsContent from '../cardsContent'
 
 
 
@@ -46,32 +48,14 @@ return(
         (
             <>
             <NavExpertise/>
-            <div className='firstUx'>
-            <div className='textUx'>
-                <div className='titleUx'>
-                    <div className='imageEx'>
-                    <img src={rombo} className='elipseUx'/>
-                    </div>
-                    <div className='titleEx'>
-                    <h1>Collage</h1>
-                    </div>
-                </div>
-                <div className='paragraphUx'>
-                    <p>
-                    To unlock my creativity, I strive to craft parallel universes through surreal compositions. I seek to uncover unsettling yet captivating elements within these artworks, allowing my imagination to soar to realms untouched by the constraints of everyday life
-                    </p>
-                </div>
-            </div>
-            <div className='contactUx'>
-                <div className='elipseUxUi'>
-                <img src={rombo} className='animationImage' />
-                </div>
-                <div className='buttonContactEx'>
-                <a href='#footer'><button className='contactMeUx contactMeC'>Contact Me</button></a>   
-                </div>
-               
-            </div>
-        </div>
+            <First
+        principalImage={rombo}
+        experienceTitle='Collage'
+        experienceParagraph='To unlock my creativity, I strive to craft parallel universes through surreal compositions. I seek to uncover unsettling yet captivating elements within these artworks, allowing my imagination to soar to realms untouched by the constraints of everyday life'
+        animationImage={rombo}
+        animation='animationImage'
+        />
+        
         <div className='collage'>
             <div className='collage1'>
                 <img className='imageRight' src={c1}/>
@@ -98,6 +82,14 @@ return(
                 <img className='imageLeft' src={c12}/>
             </div>
          </div>
+         <div className='cardsExperience'>
+        <CardsContent
+        customClassName='cardSection'
+        customCardClassName='experienceCards'
+        customCardMobileImage='cardImageMobile'
+        customCardMobileTitle='cardTitleMobile'
+        customCardMobileP='cardTextMobile'/>
+     </div>
          <div className='footerUx' id='footer'> 
             <Footer/>
          </div>

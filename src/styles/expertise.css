@@ -1,4 +1,8 @@
-.expertise{
+:root{
+    --bk-card-ux: rgb(64 110 228)
+
+}
+    .expertise{
     background-color: black;
 }
 .experience{
@@ -30,9 +34,13 @@
     flex-shrink: 0;
     justify-content: space-evenly;
 }
-.cards:hover{
-    background-color: rgb(64 110 228);
-}
+.cards {
+    transition: background-color 0.3s ease;
+  }
+  .cards:hover {
+    background-color: var(--card-hover-background-color, var(--card-background-color));
+  }
+  
 .cardTitle{
     color: #FFF;
     font-family: 'Be Vietnam Pro',sans-serif;

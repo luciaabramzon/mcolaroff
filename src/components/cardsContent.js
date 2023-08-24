@@ -6,50 +6,50 @@ import card4 from '../images/elipse2.svg'
 import card5 from '../images/polygon2.svg'
 import card6 from '../images/polygon3.svg'
 
-const CardsContent = ({customClassName,customCardClassName}) => {
+const CardsContent = ({customClassName,customCardClassName,customCardMobileImage,customCardMobileTitle,customCardMobileP}) => {
 
   const cards=[
     {   
         image:card1,
         title:'UX/UI DESIGN',
-        content:"Try here an informative text of what a UX/UI designer does.",
+        content:"Journey through my UX/UI design portfolio, where digital experiences come to life",
         link:'/uxui',
-        color:'rgb(64 110 228)'
+        backgroundColor:'rgb(64 110 228)',
     },
     {
         image:card2,
         title:"PHOTOGRAPH",
         content:"Seeking a different perspective, I work with product photography both professionally and as a hobby",
         link:'/photograph',
-        color:'#9747ff'
+        backgroundColor:'#9747ff'
     },
     {
         image:card3,
         title:"VIDEO EDITING",
         content:"Video editing aimed at evoking emotions within the pieces I create",
         link:'/video',
-        color:'#e37056',
+        backgroundColor:'#e37056',
     },
     {
         image:card4,
         title:"BRANDING",
-        content:"Video editing aimed at evoking emotions within the pieces I create",
+        content:'Where each project is a unique story told through visuals',
         link:'/branding',
-        color:"#e3b440",
+        backgroundColor:"#e3b440",
     },
     {
         image:card5,
         title:"VJING",
         content:"Afficionate about real-time visuals, exploring my creativity.",
         link:"/vjing",
-        color:'#93bc97'
+        backgroundColor:'#93bc97'
     },
     {
         image:card6,
         title:"COLLAGE",
         content:"Embarking on a journey through another galaxy in search of a surreal voyage.",
         link:'/collage',
-        color:'#17aaa9'
+        backgroundColor:'#17aaa9'
     }
 ]
 const handleHover = (event, color) => {
@@ -64,13 +64,14 @@ const handleHover = (event, color) => {
         {cards.map((card) => (
           <Link to={card.link} hash='top' key={card.title}>
             <div
-              className={`cards ${customCardClassName}`}
-              onMouseEnter={(e) => handleHover(e, card.color)}
+              className={`cards ${customCardClassName} `}
+              style={{'--card-hover-background-color': card.backgroundColor}}
+              onMouseEnter={(e) => handleHover(e, card.backgroundColor)}
               onMouseLeave={(e) => handleHoverExit(e)}
             >
-              <img className='icon' src={card.image} />
-              <p className='cardTitle'>{card.title}</p>
-              <p className='cardInfo'>{card.content}</p>
+              <img className={`icon ${customCardMobileImage}` }src={card.image} />
+              <p className={`cardTitle ${customCardMobileTitle}`}>{card.title}</p>
+              <p className={`cardInfo ${customCardMobileP}`}>{card.content}</p>
             </div>
           </Link>
         ))}

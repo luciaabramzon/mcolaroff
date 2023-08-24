@@ -82,6 +82,19 @@ justify-content: space-evenly;
   .arrowsAbout{
     margin-top: 0%;
   }
+  .hashtags{
+    display: grid;
+  grid-template-columns: repeat(11, 1fr); 
+  gap: 10px;
+  width: 80%;
+  margin:0 auto;
+  margin-top:5%;
+  margin-bottom:5%;
+}
+  .hashtags li{
+    width: 110%;
+  }
+  
   @media (max-width:768px){
     .aboutTitle{
         margin-top: 10% !important;

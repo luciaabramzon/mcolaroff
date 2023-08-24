@@ -11,9 +11,11 @@ import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Loader from '../Loader'
 import boarUx from '../../images/boarux.svg'
-import donapp from '../../images/uxui.webp'
-import Expertise from '../Expertise'
+import donapp from '../../images/donapUx.webp'
+import Yendo from '../../images/yendoUx.webp'
+import ebalance from '../../images/ebalanceUx.webp'
 import CardsContent from '../cardsContent'
+import First from './first'
 
 
 const UXUI=()=>{
@@ -42,35 +44,16 @@ return(
     (
         <>
         <NavExpertise/>
-    <div className='firstUx'>
-        <div className='textUx'>
-            <div className='titleUx'>
-                <div className='imageEx'>
-                <img src={elipse} className='elipseUx'/>
-                </div>
-                <div className='titleEx'>
-                <h1>UX/UI</h1>
-                </div>
-            </div>
-            <div className='paragraphUx'>
-                <p>
-                Ihighly recommend Martin for any UX/UI design role, particularly in the web3 blockchain DeFi space. As a UX/UI Designer at The Sandbox Game, Martin demonstrated exceptional skill and creativity, a deep understanding of the blockchain industry and DeFi space, and a positive attitude and strong work ethic. Their designs were both functional and aesthetically pleasing, and they were always willing to collaborate and provide constructive feedback. Martin would make a significant impact on any design team they join
-                </p>
-            </div>
-        </div>
-        <div className='contactUx'>
-            <div className='elipseUxUi'>
-            <img src={elipse} className='romboAnimation' />
-            </div>
-            <div className='buttonContactEx'>
-            <a href='#footer'><button className='contactMeUx'>Contact Me</button></a>   
-            </div>
-           
-        </div>
-    </div>
+        <First
+        principalImage={elipse}
+        experienceTitle='UX/UI'
+        experienceParagraph="Welcome to a journey through my UX/UI design portfolio, where digital experiences come to life. With a blend of creativity and user-centric approach, I've crafted interfaces that seamlessly marry aesthetics with functionality. From wireframes to prototypes, my designs breathe life into ideas, enhancing user engagement and satisfaction. Let's explore a collection that showcases my passion for creating intuitive, impactful, and visually appealing digital solutions."
+        animationImage={elipse}
+        animation='romboAnimation'
+        />
     <div className='projects'>
             <ProjectRight
-            number='01'
+            number=''
              projectName='Boar'
              projectText="Creation of the complete image for a craft beer to launch in the market."
              buttonUrl="https://www.behance.net/gallery/144309983/Boar-Cerveza-Natural"
@@ -79,7 +62,7 @@ return(
      </div>
      <div className='projects'>
             <ProjectLeft
-            numberLeft='02'
+            numberLeft=''
              projectLeftName="Donapp"
              projectLeftText="Donapp is an application aimed at promoting blood donation and providing assistance to the community."
              buttonLeftUrl="https://www.behance.net/gallery/100876611/DonApp"
@@ -88,17 +71,39 @@ return(
      </div>
      <div className='projects'>
             <ProjectRight
-            number='01'
-             projectName="Name of the proyect"
-             projectText="Breif information about the proyect which problems  I solve as a designer."
-             buttonUrl="/project-1"
-             projectImage={projectR}
+            number=''
+             projectName="e-Balance"
+             projectText="Preventing food waste is a collective responsibility. "
+             buttonUrl="https://www.behance.net/gallery/144409317/eBalance-App"
+             projectImage={ebalance}
              />
      </div>
+     <div className='projects'>
+            <ProjectLeft
+            numberLeft=''
+             projectLeftName="Yendo"
+             projectLeftText="An app that connects individuals with similar interests for shared activities. Designed for those seeking like-minded connections, making it easier to find others who share their passions"
+             buttonLeftUrl="https://www.behance.net/gallery/144405243/Yendo-app"
+             projectLeftImage={Yendo}
+             />
+     </div>
+     <div className='projects'>
+            <ProjectRight
+            number=''
+             projectName="The Sandbox Marketplace"
+             projectText="Enhance the user experience and interface design specifically for the buying, selling, categorization and visualization of NFTs available for sale. "
+             buttonUrl="https://www.behance.net/gallery/144409317/eBalance-App"
+             projectImage={ebalance}
+             />
+     </div>
+     
      <div className='cardsExperience'>
         <CardsContent 
         customClassName='cardSection'
-        customCardClassName='experienceCards'/>
+        customCardClassName='experienceCards'
+        customCardMobileImage='cardImageMobile'
+        customCardMobileTitle='cardTitleMobile'
+        customCardMobileP='cardTextMobile'/>
      </div>
      <div className='footerUx' id='footer'> 
         <Footer/>

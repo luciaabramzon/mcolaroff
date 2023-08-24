@@ -9,6 +9,8 @@ import Footer from '../Footer'
 import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Loader from '../Loader'
+import CardsContent from '../cardsContent'
+import First from './first'
 
 
 
@@ -38,59 +40,25 @@ return(
         (
             <>
             <NavExpertise/>
-            <div className='firstUx'>
-            <div className='textUx'>
-                <div className='titleUx'>
-                    <div className='imageEx'>
-                    <img src={polygon} className='elipseUx'/>
-                    </div>
-                    <div className='titleEx'>
-                    <h1>Vjing</h1>
-                    </div>
-                </div>
-                <div className='paragraphUx'>
-                    <p>
-                    Ihighly recommend Martin for any UX/UI design role, particularly in the web3 blockchain DeFi space. As a UX/UI Designer at The Sandbox Game, Martin demonstrated exceptional skill and creativity, a deep understanding of the blockchain industry and DeFi space, and a positive attitude and strong work ethic. Their designs were both functional and aesthetically pleasing, and they were always willing to collaborate and provide constructive feedback. Martin would make a significant impact on any design team they join
-                    </p>
-                </div>
-            </div>
-            <div className='contactUx'>
-                <div className='elipseUxUi'>
-                <img src={polygon} className='circleAnimation' />
-                </div>
-                <div className='buttonContactEx'>
-                <a href='#footer'><button className='contactMeUx contactMeVj'>Contact Me</button></a>   
-                </div>
-               
-            </div>
-        </div>
-         <div className='projects'>
-                <ProjectLeft
-                numberLeft='02'
-                 projectLeftName="Name of the proyect"
-                 projectLeftText="Breif information about the proyect which problems  I solve as a designer."
-                 buttonLeftUrl="/project-1"
-                 projectLeftImage={projectL}
-                 />
+            <First
+        principalImage={polygon}
+        experienceTitle='Vjing'
+        experienceParagraph='Ihighly recommend Martin for any UX/UI design role, particularly in the web3 blockchain DeFi space. As a UX/UI Designer at The Sandbox Game, Martin demonstrated exceptional skill and creativity, a deep understanding of the blockchain industry and DeFi space, and a positive attitude and strong work ethic. Their designs were both functional and aesthetically pleasing, and they were always willing to collaborate and provide constructive feedback. Martin would make a significant impact on any design team they join'
+        animationImage={polygon}
+        animation='circleAnimation'
+        />
+    
+         <div className='videos'>
+         <iframe  src="https://www.youtube.com/embed/OWnJl795VnM?si=CIYW4q1Kd0jrseu5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
          </div>
-         <div className='projects'>
-                <ProjectRight
-                number='01'
-                 projectName="Name of the proyect"
-                 projectText="Breif information about the proyect which problems  I solve as a designer."
-                 buttonUrl="/project-1"
-                 projectImage={projectR}
-                 />
-         </div>
-         <div className='projects'>
-                <ProjectLeft
-                numberLeft='02'
-                 projectLeftName="Name of the proyect"
-                 projectLeftText="Breif information about the proyect which problems  I solve as a designer."
-                 buttonLeftUrl="/project-1"
-                 projectLeftImage={projectL}
-                 />
-         </div>
+         <div className='cardsExperience'>
+        <CardsContent
+        customClassName='cardSection'
+        customCardClassName='experienceCards'
+        customCardMobileImage='cardImageMobile'
+        customCardMobileTitle='cardTitleMobile'
+        customCardMobileP='cardTextMobile'/>
+     </div>
          <div className='footerUx' id='footer'> 
             <Footer/>
          </div>
