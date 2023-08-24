@@ -335,7 +335,7 @@ margin-bottom: 4%;
   .cardSection{
     display: flex;
     flex-direction: row;
-    gap: 1%;
+    gap: 2%;
     margin-top: 8%;
     margin-bottom: 8%;
     overflow: scroll;
