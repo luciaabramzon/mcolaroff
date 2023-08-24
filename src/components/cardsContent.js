@@ -65,9 +65,9 @@ const handleHover = (event, color) => {
           <Link to={card.link} hash='top' key={card.title}>
             <div
               className={`cards ${customCardClassName} `}
-              style={{'--card-hover-background-color': card.backgroundColor}}
-              onMouseEnter={(e) => handleHover(e, card.backgroundColor)}
-              onMouseLeave={(e) => handleHoverExit(e)}
+              // style={{'--card-hover-background-color': card.backgroundColor}}
+              // onMouseEnter={(e) => handleHover(e, card.backgroundColor)}
+              // onMouseLeave={(e) => handleHoverExit(e)}
             >
               <img className={`icon ${customCardMobileImage}` }src={card.image} />
               <p className={`cardTitle ${customCardMobileTitle}`}>{card.title}</p>

@@ -7,8 +7,9 @@
 }
 .experience{
     display: flex;
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
+    justify-content: center;
 }
 .me{
     margin-top: 4%;
@@ -38,8 +39,8 @@
     transition: background-color 0.3s ease;
   }
   .cards:hover {
-    background-color: var(--card-hover-background-color, var(--card-background-color));
-  }
+    background-color: grey
+}
   
 .cardTitle{
     color: #FFF;
