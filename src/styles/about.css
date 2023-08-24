@@ -93,8 +93,14 @@ justify-content: space-evenly;
 }
   .hashtags li{
     width: 110%;
+    color: #1B1B1B;
+font-family: 'Ubuntu', sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 140% */
   }
-  
+
   @media (max-width:768px){
     .aboutTitle{
         margin-top: 10% !important;

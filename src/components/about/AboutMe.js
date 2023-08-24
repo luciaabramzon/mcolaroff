@@ -57,7 +57,7 @@ return(
                   {
                     hash.map((h)=>(
                       <div>
-                        <li>{h.text}</li>
+                        <li >{h.text}</li>
                         </div>
                     ))
                   }
