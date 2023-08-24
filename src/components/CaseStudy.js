@@ -54,6 +54,7 @@ const CaseStudy = () => {
             img1: mgr1,
             img2: mgr2,
             gif: gif,
+            link:"https://www.behance.net/gallery/144326317/MGR-Sport"
         },
         {
             caseStudyP: 'DONAPP',
@@ -62,7 +63,8 @@ const CaseStudy = () => {
             caseStudyI: 'Through a system of incentives and achievements and badges, we encourage blood donation. This project was conceived during the COVID-19 pandemic due to the shortage of blood in blood banks.',
             img1: gifDonapp,
             img2: d1,
-            gif: d2   
+            gif: d2,
+            link:"https://www.behance.net/gallery/100876611/DonApp"   
         },
         {
             caseStudyP: 'BOAR',
@@ -71,7 +73,8 @@ const CaseStudy = () => {
             caseStudyI: 'Through photographs, videos, social media posts, and an e-commerce platform, Boar was introduced as a beer that creates a unique experience with natural flavors',
             img1:boar1,
             img2: boar2,
-            gif: boar3,  
+            gif: boar3,
+            link:"https://www.behance.net/gallery/144309983/Boar-Cerveza-Natural"  
         },{
             caseStudyP: 'E-BALANCE',
             caseStudySub: 'Product design - UX/UI',
@@ -79,7 +82,8 @@ const CaseStudy = () => {
             caseStudyI:"It's a series of smart kitchen products designed to uphold order, hygiene, and most importantly, prevent food wastage within the household",
             img1:ebalance1,
             img2: ebalance2,
-            gif: ebalance3,  
+            gif: ebalance3,
+            link:"https://www.behance.net/gallery/144409317/eBalance-App"  
         }
         
     ];
@@ -97,6 +101,7 @@ const CaseStudy = () => {
                 img1={currentCaseData.img1}
                 img2={currentCaseData.img2}
                 gif={currentCaseData.gif}
+                caseStudyLink={currentCaseData.link}
             />
             </div>
             <div className='itemMobile'>
@@ -108,6 +113,7 @@ const CaseStudy = () => {
                  img1={currentCaseData.img1}
                  img2={currentCaseData.img2}
                  gif={currentCaseData.gif}
+                 caseStudyLink={currentCaseData.link}
                  />
             </div>
             <div className='arrows'>

@@ -14,7 +14,7 @@
     flex-direction: column;
     margin-top: 5%;
     text-align: initial;
-    width: 45%;
+    width: 35%;
     margin-left: 5%;
 }
 .caseStudyP{
@@ -71,6 +71,23 @@
     margin-left: 24px;
     object-fit: contain;
     overflow: hidden;
+}
+.caseStudyLinkButton{
+border: none;
+border-radius: 5px;
+background: #2946CF;
+color: white;
+display: flex;
+padding: 5px 24px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+height: 150%;
+}
+.caseStudyLinkButton:hover{
+    background-color:#6f80cd
+    
 }
 .image1{
     width: 377px;

@@ -1,7 +1,7 @@
 
 import '../styles/caseStudy.css'
 
-const Cases=({caseStudyP,caseStudySub,caseStudyT,caseStudyI,img1,img2,gif})=>{
+const Cases=({caseStudyP,caseStudySub,caseStudyT,caseStudyI,img1,img2,gif,caseStudyLink})=>{
     return(
         <div className="item1">
         <div className="caseStudy">
@@ -9,6 +9,7 @@ const Cases=({caseStudyP,caseStudySub,caseStudyT,caseStudyI,img1,img2,gif})=>{
             <p className='caseStudySub'>{caseStudySub}</p>
             <p className='caseStudyTitle'>{caseStudyT}</p>
             <p className='caseStudyInfo'>{caseStudyI}</p>
+            <a href={caseStudyLink} target="_blank" rel="noopener noreferrer"><button className='caseStudyLinkButton'>See More</button></a>
         </div>
         <div className="imagesStudy">
         <div className='image1'>
