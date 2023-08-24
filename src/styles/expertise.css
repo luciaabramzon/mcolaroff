@@ -1,7 +1,4 @@
-:root{
-    --bk-card-ux: rgb(64 110 228)
 
-}
     .expertise{
     background-color: black;
 }
@@ -39,7 +36,7 @@
     transition: background-color 0.3s ease;
   }
   .cards:hover {
-    background-color: grey
+    background-color:#424548
 }
   
 .cardTitle{

@@ -3,9 +3,7 @@ import '../../styles/animation.css'
 import NavExpertise from './NavExpertise'
 import elipse from '../../images/circleLoader.svg'
 import ProjectRight from './ProjectRight'
-import projectR from '../../images/projectR.svg'
 import ProjectLeft from './ProjectLeft'
-import projectL from '../../images/projectL.svg'
 import Footer from '../Footer'
 import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
@@ -16,6 +14,7 @@ import Yendo from '../../images/yendoUx.webp'
 import ebalance from '../../images/ebalanceUx.webp'
 import CardsContent from '../cardsContent'
 import First from './first'
+import sandbox from '../../images/sandbox.webp'
 
 
 const UXUI=()=>{
@@ -93,7 +92,7 @@ return(
              projectName="The Sandbox Marketplace"
              projectText="Enhance the user experience and interface design specifically for the buying, selling, categorization and visualization of NFTs available for sale. "
              buttonUrl="https://www.behance.net/gallery/144409317/eBalance-App"
-             projectImage={ebalance}
+             projectImage={sandbox}
              />
      </div>
      

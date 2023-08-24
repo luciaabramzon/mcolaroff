@@ -92,7 +92,7 @@ const CaseStudy = () => {
 
     return (
         <>
-        <div className='itemWeb'>
+
             <Cases
                 caseStudyP={currentCaseData.caseStudyP}
                 caseStudySub={currentCaseData.caseStudySub}
@@ -103,7 +103,7 @@ const CaseStudy = () => {
                 gif={currentCaseData.gif}
                 caseStudyLink={currentCaseData.link}
             />
-            </div>
+         
             <div className='itemMobile'>
                 <CasesMobile
                  caseStudyP={currentCaseData.caseStudyP}
