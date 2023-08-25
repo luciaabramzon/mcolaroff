@@ -18,12 +18,12 @@ body{
 .logo{
     width: 70%;
     text-align: initial;
-    margin-top: 8%;
+    margin-top: 5%;
 }
 .buttons{
     display: flex;
     width: 30%;
-    margin-top: 8%;
+    margin-top: 5%;
     color: #FFF;
     font-family: 'Ubuntu',sans-serif;
     font-size: 16px;
