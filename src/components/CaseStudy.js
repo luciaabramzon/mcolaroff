@@ -96,7 +96,7 @@ const CaseStudy = () => {
 
         const handleWheel = (e) => {
             scrollDeltaRef.current += e.deltaX;
-            const sensitivity = 400; 
+            const sensitivity = 300; 
 
             if (Math.abs(scrollDeltaRef.current) >= sensitivity) {
 
