@@ -57,7 +57,11 @@ i{
     }
     .contact{
         align-items: flex-start;
-        margin-left: 15%;
+        margin-left: 8%;
+        width: 100%;
+    }
+    .contactText{
+        width: 100%;
     }
     .socialMedia{
         display: flex;
