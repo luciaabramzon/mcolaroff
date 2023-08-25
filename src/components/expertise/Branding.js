@@ -5,7 +5,7 @@ import holistic from '../../images/holisticLogo.svg'
 import mw from '../../images/LogoMW.svg'
 import oa from '../../images/oalogo.svg'
 import donate from '../../images/donateLogo.svg'
-import periplo from '../../images/periploLogo.svg'
+import periplo from '../../images/periploLogo.webp'
 import mgr from '../../images/mgrLogo.svg'
 import Footer from '../Footer'
 import { useLocation } from 'react-router-dom'
@@ -13,7 +13,10 @@ import { useEffect, useState } from 'react'
 import Loader from '../Loader'
 import CardsContent from '../cardsContent'
 import First from './first'
-
+import naturalBeats from '../../images/naturalBeats.webp'
+import mgrBranding from '../../images/mgrBranding.webp'
+import ProjectRight from './ProjectRight'
+import ProjectLeft from './ProjectLeft'
 
 
 const Branding=()=>{
@@ -81,6 +84,23 @@ return(
                 ))
             }
         </div>
+        </div>
+        <div className='projectsBranding'>
+        <h1 className='tituloBranding'>Projects</h1>
+        <ProjectRight
+         number=''
+         projectName="Natural Beats"
+         projectText="Creation ofthe visual identity for an electronic music festival in a natural spot within the city."
+         buttonUrl='https://www.behance.net/gallery/89686345/Natural-Beats'
+         projectImage={naturalBeats}
+         />
+         <ProjectLeft
+                numberLeft=''
+                projectLeftName="MGR"
+                projectLeftText='Re-Branding MGR SPORT, a local sports brand in Uruguay, to infuse it with heightened dynamism and a focus on movement.'
+                buttonLeftUrl="https://www.behance.net/gallery/144326317/MGR-Sport"
+                projectLeftImage={mgrBranding}
+         />
         </div>
         <div className='cardsExperience'>
         <CardsContent

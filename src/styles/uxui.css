@@ -61,7 +61,7 @@ border: none;
 .projectR , .projectL{ 
     display: flex;
     flex-direction: row;
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
 }
 .projectL{
@@ -84,6 +84,12 @@ width: 50%;
 .projectImage{
     width: 50%;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+.projectLeftImage{
+    display: flex;
+    justify-content: flex-start;
 }
 .imageProject{
     width: 95%;
@@ -150,6 +156,9 @@ justify-content: center;
 align-items: flex-start;
 text-align: initial;
 
+}
+.paragraph{
+    padding-left: 5%;
 }
 .buttonProject{
     color: #FFF;
