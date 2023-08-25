@@ -10,8 +10,8 @@ const ProjectLeft = ({ projectLeftName, projectLeftText, buttonLeftUrl,projectLe
       <div className="projectLeftText paragraph">
         <p className='projectLeftNumber'>{numberLeft}</p>
         <h3 className='projectLeftName'>{projectLeftName}</h3>
-        <p className='projectLeftText'>{projectLeftText}</p>
-        <a href={buttonLeftUrl} target="_blank" rel="noopener noreferrer"><button className='buttonProject'>Show Project</button></a>
+        <p className='projectLeft'>{projectLeftText}</p>
+        <a className='buttonProjects' href={buttonLeftUrl} target="_blank" rel="noopener noreferrer"><button className='buttonProject'>Show Project</button></a>
       </div>
   
     </div>

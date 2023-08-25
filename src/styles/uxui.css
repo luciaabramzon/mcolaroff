@@ -441,13 +441,17 @@ margin-bottom: 4%;
     }
     .projectLeftText{
         margin-top: 8%;
+        order: 1;
+    }
+    .buttonProjects{
+        margin-bottom: 5%;
     }
     .imageProject{
         width: 100%;
     }
     .projectImage{
         width: 90%;
-        margin-top:5%
+        margin-top:2%
     }
     .marginUx{
         width: 80%;
@@ -507,6 +511,15 @@ margin-bottom: 4%;
     .videos iframe {
         width: 310px;
         height: 195px; 
+      }
+      .projectLeftImage{
+        width: 90%;
+        order: 2;
+        margin-top: 2%;
+        margin-bottom: 8%;
+      }
+      .projectLeftText p{
+        width: 80%;
       }
 
 }

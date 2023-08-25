@@ -8,7 +8,7 @@ const ProjectRight = ({ projectName, projectText, buttonUrl,projectImage , numbe
         <p className='projectNumber'>{number}</p>
         <h3 className='projectName'>{projectName}</h3>
         <p className='projectText'>{projectText}</p>
-        <a href={buttonUrl} target="_blank" rel="noopener noreferrer"><button className='buttonProject'>Show Project</button></a>
+        <a className='buttonProjects' href={buttonUrl} target="_blank" rel="noopener noreferrer"><button className='buttonProject'>Show Project</button></a>
         
       </div>
       <div className="projectImage">

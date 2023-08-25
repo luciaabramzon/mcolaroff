@@ -104,7 +104,7 @@ const CaseStudy = () => {
                 caseStudyLink={currentCaseData.link}
             />
          
-            <div className='itemMobile'>
+            
                 <CasesMobile
                  caseStudyP={currentCaseData.caseStudyP}
                  caseStudySub={currentCaseData.caseStudySub}
@@ -115,7 +115,7 @@ const CaseStudy = () => {
                  gif={currentCaseData.gif}
                  caseStudyLink={currentCaseData.link}
                  />
-            </div>
+            
             <div className='arrows'>
                 <img src={arrow1} onClick={() => handleArrowClick('prev')} />
                 <img src={arrow2} onClick={() => handleArrowClick('next')} />

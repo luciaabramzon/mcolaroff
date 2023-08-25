@@ -3,7 +3,7 @@ import '../styles/caseStudy.css'
 
 const CasesMobile=({caseStudyP,caseStudySub,caseStudyT,caseStudyI,img1,img2,gif})=>{
     return(
-        <div className="item1">
+        <div className=" itemMobile">
         <div className="caseStudy">
             <p className='caseStudyP'>{caseStudyP}</p>
             <p className='caseStudySub'>{caseStudySub}</p>

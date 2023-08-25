@@ -129,14 +129,21 @@ body{
     transform: translateX(-50%) scaleY(1); 
   }
   @media (max-width:768px){
+    .start{
+        height: 100vh;
+    }
     .nav{
         width: 90%;
         justify-content: space-around;
     }
     .logo{
+        margin-top: 8%;
         width: 50%;
+        margin-bottom: 8%;
     }
     .buttons{
+        margin-top: 8%;
+        margin-bottom: 8%;
         width: 50%;
         font-size: 14px;
     }
@@ -156,7 +163,7 @@ body{
     }
     .frame{
         width: 300%;
-        margin-top: 15%;
+        margin-top: 30%;
         margin-bottom: 7%;
     }
     .figures{
