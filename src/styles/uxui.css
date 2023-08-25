@@ -91,6 +91,7 @@ width: 95%;
 .projectLeftImage{
     display: flex;
     justify-content: flex-start;
+    width: 50%;
 }
 .imageProject{
     width: 95%;
