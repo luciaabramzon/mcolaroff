@@ -20,7 +20,7 @@ import { useEffect, useRef, useState } from 'react'
 const CaseStudy = () => {
     const [currentCase, setCurrentCase] = useState(0);
     const caseContainerRef=useRef(null)
-    const scrollDeltaRef = useRef(0);
+    const touchStartRef = useRef(0)
 
     const goToNextCase = () => {
         setCurrentCase((prevCase) => {
@@ -94,33 +94,32 @@ const CaseStudy = () => {
     useEffect(() => {
         const container = caseContainerRef.current;
 
-        const handleWheel = (e) => {
-            scrollDeltaRef.current += e.deltaX;
-            const sensitivity = 300; 
+        const handleTouchStart = (e) => {
+            touchStartRef.current = e.touches[0].clientX;
+        };
 
-            if (Math.abs(scrollDeltaRef.current) >= sensitivity) {
+        const handleTouchMove = (e) => {
+            const touchEnd = e.touches[0].clientX;
+            const sensitivity = 50; // Ajusta este valor según tus preferencias
 
-                if (scrollDeltaRef.current > 0) {
-                    setCurrentCase((prevCase) => {
-                        if (prevCase === 0) {
-                            return cases.length - 1;
-                        } else {
-                            return prevCase - 1;
-                        }
-                    });
-                } else {
-                    setCurrentCase((prevCase) => (prevCase === cases.length - 1 ? 0 : prevCase + 1));
-                }
-                scrollDeltaRef.current = 0;
+            if (touchStartRef.current - touchEnd > sensitivity) {
+                // Desplazamiento hacia la izquierda (cambio al caso siguiente)
+                setCurrentCase((prevCase) => (prevCase === cases.length - 1 ? 0 : prevCase + 1));
+            } else if (touchEnd - touchStartRef.current > sensitivity) {
+                // Desplazamiento hacia la derecha (cambio al caso anterior)
+                setCurrentCase((prevCase) => (prevCase === 0 ? cases.length - 1 : prevCase - 1));
             }
         };
 
-        container.addEventListener('wheel', handleWheel);
+        container.addEventListener('touchstart', handleTouchStart);
+        container.addEventListener('touchmove', handleTouchMove);
 
         return () => {
-            container.removeEventListener('wheel', handleWheel);
+            container.removeEventListener('touchstart', handleTouchStart);
+            container.removeEventListener('touchmove', handleTouchMove);
         };
     }, []);
+
 
 
     return (
