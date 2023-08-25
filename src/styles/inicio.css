@@ -131,18 +131,21 @@ body{
   @media (max-width:768px){
     .start{
         height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .nav{
         width: 90%;
         justify-content: space-around;
     }
     .logo{
-        margin-top: 8%;
+        margin-top: 15%;
         width: 50%;
         margin-bottom: 8%;
     }
     .buttons{
-        margin-top: 8%;
+        margin-top: 15%;
         margin-bottom: 8%;
         width: 50%;
         font-size: 14px;
