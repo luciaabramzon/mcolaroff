@@ -405,12 +405,12 @@ margin-bottom: 4%;
     }
     .textUx{
         width: 90%;
-        margin-top: 10%;
     }
     .firstUx{
         display: flex;
         flex-direction: column;
         margin-bottom: 15%;
+        margin-top: 0;
     }
     .titleUx{
         display: flex;
