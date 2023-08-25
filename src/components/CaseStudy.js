@@ -100,13 +100,11 @@ const CaseStudy = () => {
 
         const handleTouchMove = (e) => {
             const touchEnd = e.touches[0].clientX;
-            const sensitivity = 200; // Ajusta este valor según tus preferencias
+            const sensitivity = 100; 
 
             if (touchStartRef.current - touchEnd > sensitivity) {
-                // Desplazamiento hacia la izquierda (cambio al caso siguiente)
                 setCurrentCase((prevCase) => (prevCase === cases.length - 1 ? 0 : prevCase + 1));
             } else if (touchEnd - touchStartRef.current > sensitivity) {
-                // Desplazamiento hacia la derecha (cambio al caso anterior)
                 setCurrentCase((prevCase) => (prevCase === 0 ? cases.length - 1 : prevCase - 1));
             }
         };
