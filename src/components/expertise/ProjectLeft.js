@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../styles/uxui.css'
 
-const ProjectLeft = ({ projectLeftName, projectLeftText, buttonLeftUrl,projectLeftImage , numberLeft}) => {
+const ProjectLeft = ({ projectLeftName, projectLeftText, buttonLeftUrl,projectLeftImage , numberLeft,brandingClassLeft}) => {
   return (
-    <div className="projectL">
+    <div className={`projectL ${brandingClassLeft} `}>
     <div className="projectLeftImage">
         <img alt={projectLeftName} className='imageProject' src={projectLeftImage} />
       </div>

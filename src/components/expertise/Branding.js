@@ -93,15 +93,20 @@ return(
          projectText="Creation ofthe visual identity for an electronic music festival in a natural spot within the city."
          buttonUrl='https://www.behance.net/gallery/89686345/Natural-Beats'
          projectImage={naturalBeats}
+         brandingClassRight='brandingClassRight'
          />
+         <div className='brandingP'>
          <ProjectLeft
                 numberLeft=''
                 projectLeftName="MGR"
-                projectLeftText='Re-Branding MGR SPORT, a local sports brand in Uruguay, to infuse it with heightened dynamism and a focus on movement.'
+                projectLeftText='Re-Branding MGR SPORT, a local sports brand, to infuse it with heightened dynamism and a focus on movement.'
                 buttonLeftUrl="https://www.behance.net/gallery/144326317/MGR-Sport"
                 projectLeftImage={mgrBranding}
+                brandingClassLeft='BrandingProjectLeft'
          />
         </div>
+         </div>
+
         <div className='cardsExperience'>
         <CardsContent
         customClassName='cardSection'
