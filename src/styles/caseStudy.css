@@ -146,7 +146,6 @@ height: 150%;
         width: 100%;
         display: flex;
         flex-direction: row;
-        height: 40vh;
     }
     .imgMobile{
         width: 90%;
@@ -169,22 +168,13 @@ height: 150%;
         width: 10%;
     }
     .image1{
-        width: 130%;
         margin-bottom: 5%;
         height: 100%;
     }
     .imagesGif{
-        width: 100%;
+       display: none;
     }
-    .image2{
-        width: 90%;
-        height: 60%;
-        margin-bottom: 5%;
-    }
-    .mgrGif{
-        width: 90%;
-        border-radius: 10px;
-    }
+
     .itemWeb{
         width: 100%;
     }
