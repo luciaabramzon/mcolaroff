@@ -15,10 +15,12 @@ import ebalance3 from '../images/ebalance3.webp'
 import '../styles/caseStudy.css'
 import Cases from './cases'
 import CasesMobile from './casesMobile'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const CaseStudy = () => {
     const [currentCase, setCurrentCase] = useState(0);
+    const caseContainerRef=useRef(null)
+    const scrollDeltaRef = useRef(0);
 
     const goToNextCase = () => {
         setCurrentCase((prevCase) => {
@@ -28,7 +30,7 @@ const CaseStudy = () => {
 
    
     useEffect(() => {
-        const interval = setInterval(goToNextCase, 20000); 
+        const interval = setInterval(goToNextCase, 40000); 
         return () => clearInterval(interval);
     }, []);
 
@@ -89,6 +91,37 @@ const CaseStudy = () => {
     ];
 
     const currentCaseData = cases[currentCase];
+    useEffect(() => {
+        const container = caseContainerRef.current;
+
+        const handleWheel = (e) => {
+            scrollDeltaRef.current += e.deltaX;
+            const sensitivity = 400; 
+
+            if (Math.abs(scrollDeltaRef.current) >= sensitivity) {
+
+                if (scrollDeltaRef.current > 0) {
+                    setCurrentCase((prevCase) => {
+                        if (prevCase === 0) {
+                            return cases.length - 1;
+                        } else {
+                            return prevCase - 1;
+                        }
+                    });
+                } else {
+                    setCurrentCase((prevCase) => (prevCase === cases.length - 1 ? 0 : prevCase + 1));
+                }
+                scrollDeltaRef.current = 0;
+            }
+        };
+
+        container.addEventListener('wheel', handleWheel);
+
+        return () => {
+            container.removeEventListener('wheel', handleWheel);
+        };
+    }, []);
+
 
     return (
         <>
@@ -104,7 +137,7 @@ const CaseStudy = () => {
                 caseStudyLink={currentCaseData.link}
             />
          
-            
+            <div className='caseStudyContainer' ref={caseContainerRef}>
                 <CasesMobile
                  caseStudyP={currentCaseData.caseStudyP}
                  caseStudySub={currentCaseData.caseStudySub}
@@ -115,7 +148,7 @@ const CaseStudy = () => {
                  gif={currentCaseData.gif}
                  caseStudyLink={currentCaseData.link}
                  />
-            
+            </div>
             <div className='arrows'>
                 <img src={arrow1} onClick={() => handleArrowClick('prev')} />
                 <img src={arrow2} onClick={() => handleArrowClick('next')} />
