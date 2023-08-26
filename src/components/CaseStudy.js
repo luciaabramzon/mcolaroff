@@ -161,7 +161,7 @@ const CaseStudy = () => {
                 caseStudyLink={currentCaseData.link}
             />
          
-            <div className='caseStudyContainer' ref={caseContainerRef}>
+            <div className='caseStudyContainer' ref={containerRef}>
                 <CasesMobile
                  caseStudyP={currentCaseData.caseStudyP}
                  caseStudySub={currentCaseData.caseStudySub}
