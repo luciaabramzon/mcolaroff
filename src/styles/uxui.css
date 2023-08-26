@@ -1,14 +1,16 @@
 .firstUx{
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 .textUx{
     display: flex;
     flex-direction: column;
     width: 50%;
+    margin-left: 10%;
 }
 .contactUx{
     display: flex;
@@ -16,6 +18,12 @@
     width: 40%;
     margin-left: 10%;
     justify-content: space-between;
+    margin-right: 10%;
+    align-items: flex-end;
+    text-align: end;
+}
+.buttonContactEx{
+    width: 110%;
 }
 .paragraphUx{
     color: #000;
@@ -392,6 +400,7 @@ margin-bottom: 4%;
     }
     .textUx{
         width: 90%;
+        margin: 0 auto;
     }
     .firstUx{
         display: flex;
