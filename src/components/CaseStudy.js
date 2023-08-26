@@ -16,11 +16,10 @@ import '../styles/caseStudy.css'
 import Cases from './cases'
 import CasesMobile from './casesMobile'
 import { useEffect, useRef, useState } from 'react'
+import { useSwipeable } from 'react-swipeable'
 
 const CaseStudy = () => {
     const [currentCase, setCurrentCase] = useState(0);
-    const containerRef = useRef(null);
-    const touchStartY = useRef(null);
 
     const goToNextCase = () => {
         setCurrentCase((prevCase) => {
@@ -28,7 +27,21 @@ const CaseStudy = () => {
         });
     };
 
-   
+    const handlers = useSwipeable({
+        onSwipedLeft: () => {
+          // Deslizar hacia la izquierda
+          setCurrentCase((prevCase) => {
+            return prevCase === cases.length - 1 ? 0 : prevCase + 1;
+          });
+        },
+        onSwipedRight: () => {
+          // Deslizar hacia la derecha
+          setCurrentCase((prevCase) => {
+            return prevCase === 0 ? cases.length - 1 : prevCase - 1;
+          });
+        },
+      });
+    
     useEffect(() => {
         const interval = setInterval(goToNextCase, 40000); 
         return () => clearInterval(interval);
@@ -91,64 +104,6 @@ const CaseStudy = () => {
     ];
 
     const currentCaseData = cases[currentCase];
-    // useEffect(() => {
-    //     const container = caseContainerRef.current;
-
-    //     const handleTouchStart = (e) => {
-    //         touchStartRef.current = e.touches[0].clientX;
-    //     };
-
-    //     const handleTouchMove = (e) => {
-    //         const touchEnd = e.touches[0].clientX;
-    //         const sensitivity = 60; 
-
-    //         if (touchStartRef.current - touchEnd > sensitivity) {
-    //             setCurrentCase((prevCase) => (prevCase === cases.length - 1 ? 0 : prevCase + 1));
-    //         } else if (touchEnd - touchStartRef.current > sensitivity) {
-    //             setCurrentCase((prevCase) => (prevCase === 0 ? cases.length - 1 : prevCase - 1));
-    //         }
-    //     };
-
-    //     container.addEventListener('touchstart', handleTouchStart);
-    //     container.addEventListener('touchmove', handleTouchMove);
-
-    //     return () => {
-    //         container.removeEventListener('touchstart', handleTouchStart);
-    //         container.removeEventListener('touchmove', handleTouchMove);
-    //     };
-    // }, []);
-    const handleTouchStart = (e) => {
-        touchStartY.current = e.touches[0].clientY;
-      };
-    
-      const handleTouchMove = (e) => {
-        if (!touchStartY.current) return;
-    
-        const touchEndY = e.touches[0].clientY;
-        const deltaY = touchEndY - touchStartY.current;
-    
-        if (deltaY > 50) {
-          // Desplazamiento hacia abajo, ir al siguiente caso
-          setCurrentCase((prevCase) => (prevCase === cases.length - 1 ? 0 : prevCase + 1));
-        } else if (deltaY < -50) {
-          // Desplazamiento hacia arriba, ir al caso anterior
-          setCurrentCase((prevCase) => (prevCase === 0 ? cases.length - 1 : prevCase - 1));
-        }
-    
-        // Restablecemos la posición de inicio para el siguiente movimiento
-        touchStartY.current = null;
-      };
-    
-      useEffect(() => {
-        const container = containerRef.current;
-        container.addEventListener('touchstart', handleTouchStart);
-        container.addEventListener('touchmove', handleTouchMove, { passive: false });
-    
-        return () => {
-          container.removeEventListener('touchstart', handleTouchStart);
-          container.removeEventListener('touchmove', handleTouchMove);
-        };
-      }, []);
     
 
     return (
@@ -165,7 +120,7 @@ const CaseStudy = () => {
                 caseStudyLink={currentCaseData.link}
             />
          
-            <div className='caseStudyContainer' ref={containerRef}>
+            <div className='caseStudyContainer' {...handlers}>
                 <CasesMobile
                  caseStudyP={currentCaseData.caseStudyP}
                  caseStudySub={currentCaseData.caseStudySub}
@@ -176,7 +131,9 @@ const CaseStudy = () => {
                  gif={currentCaseData.gif}
                  caseStudyLink={currentCaseData.link}
                  />
+                 
             </div>
+
             <div className='arrows'>
                 <img src={arrow1} onClick={() => handleArrowClick('prev')} />
                 <img src={arrow2} onClick={() => handleArrowClick('next')} />
