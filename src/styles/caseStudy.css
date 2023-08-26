@@ -147,6 +147,7 @@ height: 150%;
     .imagesStudy{
         width: 100%;
         display: flex;
+        justify-content: center;
         flex-direction: row;
     }
     .imgMobile{
@@ -171,8 +172,9 @@ height: 150%;
     }
     .image1{
         margin-bottom: 5%;
-        width: 377px;
-    height: 507px; 
+        width: 100%;
+        /* width: 377px;
+    height: 507px;  */
     }
     .imagesGif{
        display: none;
