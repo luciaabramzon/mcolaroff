@@ -100,7 +100,7 @@ const CaseStudy = () => {
 
         const handleTouchMove = (e) => {
             const touchEnd = e.touches[0].clientX;
-            const sensitivity = 100; 
+            const sensitivity = 60; 
 
             if (touchStartRef.current - touchEnd > sensitivity) {
                 setCurrentCase((prevCase) => (prevCase === cases.length - 1 ? 0 : prevCase + 1));
