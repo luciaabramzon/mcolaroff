@@ -121,8 +121,10 @@ const CaseStudy = () => {
         touchStartY.current = e.touches[0].clientY;
       };
     
-      const handleTouchEnd = (e) => {
-        const touchEndY = e.changedTouches[0].clientY;
+      const handleTouchMove = (e) => {
+        if (!touchStartY.current) return;
+    
+        const touchEndY = e.touches[0].clientY;
         const deltaY = touchEndY - touchStartY.current;
     
         if (deltaY > 50) {
@@ -132,20 +134,22 @@ const CaseStudy = () => {
           // Desplazamiento hacia arriba, ir al caso anterior
           setCurrentCase((prevCase) => (prevCase === 0 ? cases.length - 1 : prevCase - 1));
         }
+    
+        // Restablecemos la posición de inicio para el siguiente movimiento
+        touchStartY.current = null;
       };
     
       useEffect(() => {
         const container = containerRef.current;
         container.addEventListener('touchstart', handleTouchStart);
-        container.addEventListener('touchend', handleTouchEnd);
+        container.addEventListener('touchmove', handleTouchMove, { passive: false });
     
         return () => {
           container.removeEventListener('touchstart', handleTouchStart);
-          container.removeEventListener('touchend', handleTouchEnd);
+          container.removeEventListener('touchmove', handleTouchMove);
         };
       }, []);
     
-
 
     return (
         <>
