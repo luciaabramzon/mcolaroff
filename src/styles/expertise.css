@@ -10,6 +10,8 @@
 }
 .me{
     margin-top: 4%;
+    width: 40%;
+    margin-left: 10%;
 }
 .cardsContent{
     display: grid;
@@ -18,6 +20,8 @@
   justify-content: center; 
   margin-top: 5%;
   margin-bottom: 5%;
+  width: 60%;
+  margin-right: 10%;
 }
 .cards{
     border-radius: 10px;
@@ -91,6 +95,7 @@ text-align: initial;
         justify-content: flex-start;
         overflow: scroll;
         padding-left: 8%;
+        width: 100%;
     }
     .me{
         width: 85%;
