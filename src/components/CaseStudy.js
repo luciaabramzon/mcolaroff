@@ -19,8 +19,8 @@ import { useEffect, useRef, useState } from 'react'
 
 const CaseStudy = () => {
     const [currentCase, setCurrentCase] = useState(0);
-    const caseContainerRef=useRef(null)
-    const touchStartRef = useRef(0)
+    const containerRef = useRef(null);
+    const touchStartY = useRef(null);
 
     const goToNextCase = () => {
         setCurrentCase((prevCase) => {
@@ -91,33 +91,60 @@ const CaseStudy = () => {
     ];
 
     const currentCaseData = cases[currentCase];
-    useEffect(() => {
-        const container = caseContainerRef.current;
+    // useEffect(() => {
+    //     const container = caseContainerRef.current;
 
-        const handleTouchStart = (e) => {
-            touchStartRef.current = e.touches[0].clientX;
-        };
+    //     const handleTouchStart = (e) => {
+    //         touchStartRef.current = e.touches[0].clientX;
+    //     };
 
-        const handleTouchMove = (e) => {
-            const touchEnd = e.touches[0].clientX;
-            const sensitivity = 60; 
+    //     const handleTouchMove = (e) => {
+    //         const touchEnd = e.touches[0].clientX;
+    //         const sensitivity = 60; 
 
-            if (touchStartRef.current - touchEnd > sensitivity) {
-                setCurrentCase((prevCase) => (prevCase === cases.length - 1 ? 0 : prevCase + 1));
-            } else if (touchEnd - touchStartRef.current > sensitivity) {
-                setCurrentCase((prevCase) => (prevCase === 0 ? cases.length - 1 : prevCase - 1));
-            }
-        };
+    //         if (touchStartRef.current - touchEnd > sensitivity) {
+    //             setCurrentCase((prevCase) => (prevCase === cases.length - 1 ? 0 : prevCase + 1));
+    //         } else if (touchEnd - touchStartRef.current > sensitivity) {
+    //             setCurrentCase((prevCase) => (prevCase === 0 ? cases.length - 1 : prevCase - 1));
+    //         }
+    //     };
 
+    //     container.addEventListener('touchstart', handleTouchStart);
+    //     container.addEventListener('touchmove', handleTouchMove);
+
+    //     return () => {
+    //         container.removeEventListener('touchstart', handleTouchStart);
+    //         container.removeEventListener('touchmove', handleTouchMove);
+    //     };
+    // }, []);
+    const handleTouchStart = (e) => {
+        touchStartY.current = e.touches[0].clientY;
+      };
+    
+      const handleTouchEnd = (e) => {
+        const touchEndY = e.changedTouches[0].clientY;
+        const deltaY = touchEndY - touchStartY.current;
+    
+        if (deltaY > 50) {
+          // Desplazamiento hacia abajo, ir al siguiente caso
+          setCurrentCase((prevCase) => (prevCase === cases.length - 1 ? 0 : prevCase + 1));
+        } else if (deltaY < -50) {
+          // Desplazamiento hacia arriba, ir al caso anterior
+          setCurrentCase((prevCase) => (prevCase === 0 ? cases.length - 1 : prevCase - 1));
+        }
+      };
+    
+      useEffect(() => {
+        const container = containerRef.current;
         container.addEventListener('touchstart', handleTouchStart);
-        container.addEventListener('touchmove', handleTouchMove);
-
+        container.addEventListener('touchend', handleTouchEnd);
+    
         return () => {
-            container.removeEventListener('touchstart', handleTouchStart);
-            container.removeEventListener('touchmove', handleTouchMove);
+          container.removeEventListener('touchstart', handleTouchStart);
+          container.removeEventListener('touchend', handleTouchEnd);
         };
-    }, []);
-
+      }, []);
+    
 
 
     return (
