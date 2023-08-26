@@ -91,8 +91,10 @@ height: 150%;
     
 }
 .image1{
-    width: 377px;
-    height: 507px;
+    /* width: 377px;
+    height: 507px; */
+    width: 54%;
+    height: 100%;
     object-fit: contain;
     overflow: hidden;
  
@@ -103,12 +105,12 @@ height: 150%;
     border-radius: 20px;
 }
 .image2{
-    height: 277px;
-    width: 277px;
+    /* height: 277px;
+    width: 277px; */
 }
 .mgrGif{
-    width: 277px;
-    height: 206px;
+    /* width: 277px;
+    height: 206px; */
     margin-top: 24px;
 }
 .gif{
