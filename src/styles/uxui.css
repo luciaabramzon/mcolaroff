@@ -100,22 +100,10 @@ width: 95%;
 .projects{
     margin-top: 2%;
 }
-.projectNumber{
-    color: #333;
-font-family: 'Be Vietnam Pro', sans-serif;
-font-size: 21px;
-font-style: normal;
-font-weight: 500;
-line-height: 120%; /* 120% */
+.projectNumber,.projectLeftNumber{
+display: none;
 }
-.projectLeftNumber{
-    color: white;
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%; /* 120% */
-}
+
 .projectName{
     color: #333;
 font-family: 'Ubuntu',sans-serif;
@@ -124,7 +112,6 @@ font-style: normal;
 font-weight: 500;
 line-height: 110%; /* 110% */
 margin: 0;
-margin-bottom:8%
 }
 .projectLeftName{
     color: white;
@@ -134,9 +121,9 @@ margin-bottom:8%
     font-weight: 500;
     line-height: 110%; /* 110% */
     margin: 0;
-    margin-bottom:8%
 }
 .projectText{
+    margin:0;
     color: #000;
 font-family: Be Vietnam Pro;
 font-size: 16px;
@@ -162,6 +149,8 @@ text-align: initial;
 .paragraph{
     padding-left: 5%;
     width: 50%;
+    display: flex;
+    justify-content: space-evenly;
 }
 .buttonProject{
     color: #FFF;
@@ -176,7 +165,6 @@ background: #2946CF;
 padding: 10px;
 border: none;
 display: flex;
-margin-top: 8%;
 }
 .marginUx{
     margin-left: 10%;
@@ -438,7 +426,7 @@ margin-bottom: 4%;
         align-items: center;
         justify-content: space-around;
     }
-    .projectText, .projectLeftText{
+    .paragraph{
         width: 90%;
         height: 60vh;
     }
