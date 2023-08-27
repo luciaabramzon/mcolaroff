@@ -43,8 +43,7 @@ return(
             <First
         principalImage={polygon}
         experienceTitle='Vjing'
-        experienceParagraph='Ihighly recommend Martin for any UX/UI design role, particularly in the web3 blockchain DeFi space. As a UX/UI Designer at The Sandbox Game, Martin demonstrated exceptional skill and creativity, a deep understanding of the blockchain industry and DeFi space, and a positive attitude and strong work ethic. Their designs were both functional and aesthetically pleasing, and they were always willing to collaborate and provide constructive feedback. Martin would make a significant impact on any design team they join'
-        animationImage={polygon}
+        experienceParagraph="Dive into my world of real-time visuals, where art and technology dance harmoniously. With a passion for creating captivating visual experiences on the fly, I've harnessed the power of real-time graphics to immerse audiences in dynamic and interactive environments. From live events to interactive installations, my journey explores the synergy between creativity and innovation. Join me in discovering a collection that celebrates the magic of visuals that come to life in the present moment"
         animation='circleAnimation'
         buttonContactColor='vjButton'
         />
