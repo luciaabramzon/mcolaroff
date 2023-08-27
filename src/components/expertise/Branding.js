@@ -68,7 +68,7 @@ return(
             <First
         principalImage={circle}
         experienceTitle='Branding'
-        experienceParagraph='Ihighly recommend Martin for any UX/UI design role, particularly in the web3 blockchain DeFi space. As a UX/UI Designer at The Sandbox Game, Martin demonstrated exceptional skill and creativity, a deep understanding of the blockchain industry and DeFi space, and a positive attitude and strong work ethic. Their designs were both functional and aesthetically pleasing, and they were always willing to collaborate and provide constructive feedback. Martin would make a significant impact on any design team they join'
+        experienceParagraph="Step into the realm of branding where each project is a unique story told through visuals. In my branding portfolio, you'll discover a fusion of strategic thinking and creative design, capturing the essence of businesses in captivating logos, color palettes, and visual identities. From conceptualization to execution, I've woven narratives that resonate with audiences, leaving a lasting impression. Join me in exploring a showcase of brand identities that have been meticulously crafted to stand out and connect"
         animationImage={circle}
         animation='polygonAnimation'
         buttonContactColor='buttonBranding'
