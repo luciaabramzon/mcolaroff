@@ -3,7 +3,7 @@ import forms from '../images/Frame.svg'
 import { Icon } from 'semantic-ui-react'
 
 const Footer=({id})=>{
-    const phone='0059898250291'
+    const phone='+59898250291'
     return(
         <div className="footer" id={id} >
             <div className='footerText'>
