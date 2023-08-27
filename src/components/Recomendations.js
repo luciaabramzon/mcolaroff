@@ -17,7 +17,7 @@ const Recomendations=()=>{
     ]
     return(
         <div className='recomendations'>
-    <Carousel>
+    <Carousel interval={30000}>
     {recommendations.map((rec)=>(
             <Carousel.Item key={rec.name} >
             <Carousel.Caption>

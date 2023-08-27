@@ -14,7 +14,7 @@ const AboutMe=()=>{
     const location = useLocation();
 
     const hash=[{text:'Design'},{text:'Music'},{text:'Family'},{text:'Sports'},{text:'Car racing'},{text:'Art'},{text:'Movies'} ,{text:'Travelling'},{text:'Carnaval'},{text:'Friends'},
-    {text:'Montevideo'},{text:'Jordi'},{text:'Vjing'},{text:'Animals'},{text:'Knowing people'},{text:'Punta del Este'},{text:'Tennis'},{text:'Series'} ,{text:'History'} ,{text:'Football'},{text:'Llamadas'} 
+    {text:'Montevideo'},{text:'Jordi'},{text:'Vjing'},{text:'Animals'},{text:'Tennis'},{text:'Series'} ,{text:'History'} ,{text:'Football'},{text:'Llamadas'} 
   ]
  
     useEffect(() => {
